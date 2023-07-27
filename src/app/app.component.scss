@@ -53,8 +53,11 @@ $red : #ff4385;
       }
     }
     .text-certificat{
-      // height: 30%;
       display: flex;
+      font-size: 20px;
+      height: 209px;
+      width: 226px;
+      padding: 0 0 0 44px;
       color: $white;
       transform: rotate(-90deg);
     }
