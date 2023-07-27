@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+$background : #202020;
+$white : #FFF;
+$blue : #0b83b8;
+$red : #ff4385;
+
+.container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $background;
+
+  .sidenav{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 5%;
+    height: 100%;
+    padding: 10px 5px;
+    border-right: 1px solid rgba(255, 255, 255, 0.21);
+
+    .logo-main {
+      display: flex;
+      justify-content: center;
+      height: 5%;
+      padding-top: 10px;
+      .m-red {
+        position: absolute;
+        color: $red;
+        font-family: 'Pacifico', cursive;
+        font-size: 42px;
+      }
+      .m-blue {
+        color: $blue;
+        font-family: 'Pacifico', cursive;
+        font-size: 42px;
+        padding-left: 6px;
+      }
+    }
+    .logo-menu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+      .bx{
+        font-size: 42px;
+        color: $white;
+        cursor: pointer;
+        &:hover{
+          color: $red;
+        }
+      }
+    }
+    .text-certificat{
+      // height: 30%;
+      display: flex;
+      color: $white;
+      transform: rotate(-90deg);
+    }
+  }
+  .content{
+
+  }
+}
+
+
