@@ -213,11 +213,59 @@ $font-Segoe : 'Segoe UI';
       }
     }
     .exp{
+      padding: 20px;
       .title{
+        display: flex;
+        justify-content: center;
         color: $white;
         font-family: $font-Pacifico;
         font-size: 36px;
         padding: 10px;
+      }
+      .content-exp{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        gap: 100px;
+        .student{
+          display: flex;
+          flex-direction: column;
+        }
+        .work{
+          display: flex;
+          flex-direction: column;
+        }
+        .item{
+          display: flex;
+          flex-direction: row;
+          
+          .decor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $red;
+            .bx{
+              font-size: 44px;
+            }
+            .ligne{
+              width: 3px;
+              height: 40px;
+              background-color: $red;
+            }
+          }
+          .info{
+            .year{
+              font-size: 14px;
+              color: $white;
+            }
+            .name{
+              font-size: 20px;
+              color: $white;
+            }
+            .content-info{}
+          }
+        }
       }
     }
     .contact{
