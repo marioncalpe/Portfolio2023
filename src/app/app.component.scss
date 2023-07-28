@@ -58,12 +58,12 @@ $font-Segoe : 'Segoe UI';
     }
     .text-certificat{
       display: flex;
+      align-items: center;
       font-size: 20px;
-      height: 209px;
-      width: 226px;
-      padding: 0 0 0 44px;
       color: $white;
-      transform: rotate(-90deg);
+      writing-mode: vertical-lr;
+      text-orientation: mixed;
+      padding-bottom: 15px;
     }
   }
   .content{
@@ -78,14 +78,15 @@ $font-Segoe : 'Segoe UI';
       width: 100%;
       height: 100%;
       .avatar{
-        display: flex;
-        width: 200px;
-        height: 200px;
-        border-radius: 30px;
-
+        position: relative; 
+        width: 200px; 
+        height: 200px; 
+        overflow: hidden; 
+        border-radius: 50%;
         img{
-          width: 100%;
-          height: 100%;
+          width: 100%; 
+          height: auto;
+          margin-top: -50px;
         }
       }
       .name{
@@ -133,6 +134,7 @@ $font-Segoe : 'Segoe UI';
         color: $white;
         font-family: $font-Pacifico;
         font-size: 36px;
+        padding: 10px;
       }
     }
     .techno{
@@ -140,6 +142,7 @@ $font-Segoe : 'Segoe UI';
         color: $white;
         font-family: $font-Pacifico;
         font-size: 36px;
+        padding: 10px;
       }
     }
     .exp{
@@ -147,6 +150,7 @@ $font-Segoe : 'Segoe UI';
         color: $white;
         font-family: $font-Pacifico;
         font-size: 36px;
+        padding: 10px;
       }
     }
     .contact{
@@ -154,6 +158,7 @@ $font-Segoe : 'Segoe UI';
         color: $white;
         font-family: $font-Pacifico;
         font-size: 36px;
+        padding: 10px;
       }
     }
   }
