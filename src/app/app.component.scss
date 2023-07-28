@@ -98,9 +98,15 @@ $font-Segoe : 'Segoe UI';
         color: $white;
       }
       .logo-social{
+        display: flex;
+        gap: 21px;
         .bx{
           color: $white;
           font-size: 46px;
+
+          &:hover{
+            cursor: pointer;
+          }
         }
       }
       .btn-contact{
@@ -117,6 +123,7 @@ $font-Segoe : 'Segoe UI';
         &:hover{
           background-color: $red;
           color: $background;
+          cursor: pointer;
         }
       }
     }

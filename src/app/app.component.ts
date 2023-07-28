@@ -8,4 +8,13 @@ import 'boxicons';
 })
 export class AppComponent {
   title = 'Portfolio';
+  liste_bio = [
+    'Développeur Front-End',
+    'Curieuse',
+    'Fan de jeu vidéo',
+    'Passionée',
+    'Fan de musique',
+    'Dans le partage'
+  ]
+  
 }
