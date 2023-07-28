@@ -158,7 +158,10 @@ $font-Segoe: "Segoe UI";
       }
     }
     .techno {
-      padding: 50px 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 5%;
       .title-techno {
         display: flex;
         justify-content: center;
@@ -168,48 +171,15 @@ $font-Segoe: "Segoe UI";
         padding: 50px;
       }
       .content-techno {
-      display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: repeat(2, 1fr);
-          grid-column-gap: 150px;
-          grid-row-gap: 5px;
-        .section {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 15px;
-          .title {
-            font-size: $font-Segoe;
-            font-size: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        .technos {
+          border-radius: 20px;
+          .bx {
+            padding: 5px;
+            font-size: 50px;
             color: $white;
-          }
-          .techno-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            grid-column-gap: 5px;
-            grid-row-gap: 5px;
-            .technos {
-              display: flex;
-              align-items: center;
-              flex-direction: column;
-              .bx {
-                padding: 5px;
-                font-size: 70px;
-              }
-              img {
-                padding: 5px;
-                width: 65px;
-              }
-
-              .name-techno {
-                display: flex;
-                justify-content: center;
-                font-family: $font-Segoe;
-                font-size: 14px;
-                color: $white;
-              }
-            }
           }
         }
       }
