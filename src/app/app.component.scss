@@ -130,11 +130,30 @@ $font-Segoe : 'Segoe UI';
       }
     }
     .projet{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       .title{
         color: $white;
         font-family: $font-Pacifico;
         font-size: 36px;
-        padding: 10px;
+        padding: 50px;
+      }
+      .content-projet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        .projet{
+          .cadre{
+            height: 300px;
+            width: 400px;
+            background-color: $white;
+            border-radius: 10px;
+          }
+        }
       }
     }
     .techno{
