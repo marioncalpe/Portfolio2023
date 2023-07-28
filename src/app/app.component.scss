@@ -69,6 +69,7 @@ $font-Segoe : 'Segoe UI';
   .content{
     width: 95%;
     height: 100%;
+    overflow: auto;
     .home{
       display: flex;
       align-items: center;
@@ -126,6 +127,26 @@ $font-Segoe : 'Segoe UI';
           cursor: pointer;
         }
       }
+    }
+    .projet{
+      color: $white;
+      font-family: $font-Pacifico;
+      font-size: 36px;
+    }
+    .techno{
+      color: $white;
+      font-family: $font-Pacifico;
+      font-size: 36px;
+    }
+    .exp{
+      color: $white;
+      font-family: $font-Pacifico;
+      font-size: 36px;
+    }
+    .contact{
+      color: $white;
+      font-family: $font-Pacifico;
+      font-size: 36px;
     }
   }
 }
