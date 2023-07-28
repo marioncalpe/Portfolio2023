@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-$background : #202020;
-$white : #FFF;
-$blue : #0b83b8;
-$red : #ff4385;
-$font-Pacifico : 'Pacifico', cursive;
-$font-Segoe : 'Segoe UI';
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+$background: #202020;
+$white: #fff;
+$blue: #0b83b8;
+$red: #ff4385;
+$font-Pacifico: "Pacifico", cursive;
+$font-Segoe: "Segoe UI";
 
-.container{
+.container {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -14,7 +14,7 @@ $font-Segoe : 'Segoe UI';
   overflow: hidden;
   background-color: $background;
 
-  .sidenav{
+  .sidenav {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -42,21 +42,21 @@ $font-Segoe : 'Segoe UI';
         padding-left: 6px;
       }
     }
-    .logo-menu{
+    .logo-menu {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 35px;
-      .bx{
+      .bx {
         font-size: 42px;
         color: $white;
         cursor: pointer;
-        &:hover{
+        &:hover {
           color: $red;
         }
       }
     }
-    .text-certificat{
+    .text-certificat {
       display: flex;
       align-items: center;
       font-size: 20px;
@@ -66,53 +66,53 @@ $font-Segoe : 'Segoe UI';
       padding-bottom: 15px;
     }
   }
-  .content{
+  .content {
     width: 95%;
     height: 100%;
     overflow: auto;
     margin: 20px;
-    .home{
+    .home {
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: space-evenly;
       width: 100%;
       height: 100%;
-      .avatar{
-        position: relative; 
-        width: 200px; 
-        height: 200px; 
-        overflow: hidden; 
+      .avatar {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
         border-radius: 50%;
-        img{
-          width: 100%; 
+        img {
+          width: 100%;
           height: auto;
           margin-top: -50px;
         }
       }
-      .name{
+      .name {
         font-family: $font-Pacifico;
         font-size: 36px;
         color: $white;
       }
-      .bio{
+      .bio {
         font-family: $font-Segoe;
         font-size: 20px;
         color: $white;
       }
-      .logo-social{
+      .logo-social {
         display: flex;
         gap: 21px;
-        .bx{
+        .bx {
           color: $white;
           font-size: 46px;
 
-          &:hover{
+          &:hover {
             cursor: pointer;
           }
         }
       }
-      .btn-contact{
+      .btn-contact {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -123,33 +123,32 @@ $font-Segoe : 'Segoe UI';
         font-size: 24px;
         color: $red;
 
-        &:hover{
+        &:hover {
           background-color: $red;
           color: $background;
           cursor: pointer;
         }
       }
     }
-    .projet{
+    .projet {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 20px 20px;
-      .title{
+      .title {
         color: $white;
         font-family: $font-Pacifico;
         font-size: 36px;
         padding: 50px;
       }
-      .content-projet{
+      .content-projet {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 50px;
         grid-row-gap: 50px;
-        .projet{
-          .cadre{
+        .projet {
+          .cadre {
             height: 300px;
             width: 400px;
             background-color: $white;
@@ -158,48 +157,52 @@ $font-Segoe : 'Segoe UI';
         }
       }
     }
-    .techno{
-      margin: 20px 20px;
-      .title-techno{
+    .techno {
+      padding: 50px 25%;
+      .title-techno {
         display: flex;
         justify-content: center;
         color: $white;
         font-family: $font-Pacifico;
         font-size: 36px;
-        padding: 10px;
+        padding: 50px;
       }
-      .content-techno{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        gap: 30px;
-        .section{
+      .content-techno {
+      display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-column-gap: 150px;
+          grid-row-gap: 5px;
+        .section {
           display: flex;
           flex-direction: column;
+          align-items: center;
           gap: 15px;
-          .title{
+          .title {
             font-size: $font-Segoe;
             font-size: 24px;
             color: $white;
           }
-          .techno-container{
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            .technos{
-              .cadre-techno{
-                background-color: $white;
-                border-radius: 5px;
-                .bx{
-                  padding : 5px;
-                  font-size: 70px;
-                }
-                img{
-                  padding : 5px;
-                  width: 65px;
-                }
+          .techno-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            .technos {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              .bx {
+                padding: 5px;
+                font-size: 70px;
               }
-              .name-techno{
+              img {
+                padding: 5px;
+                width: 65px;
+              }
+
+              .name-techno {
                 display: flex;
                 justify-content: center;
                 font-family: $font-Segoe;
@@ -208,13 +211,12 @@ $font-Segoe : 'Segoe UI';
               }
             }
           }
-          
         }
       }
     }
-    .exp{
-      padding: 20px;
-      .title{
+    .exp {
+      padding: 50px 25%;
+      .title {
         display: flex;
         justify-content: center;
         color: $white;
@@ -222,61 +224,76 @@ $font-Segoe : 'Segoe UI';
         font-size: 36px;
         padding: 10px;
       }
-      .content-exp{
+      .content-exp {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding: 20px;
         gap: 100px;
-        .student{
+        .student {
           display: flex;
           flex-direction: column;
         }
-        .work{
+        .work {
           display: flex;
           flex-direction: column;
         }
-        .item{
+        .item {
           display: flex;
           flex-direction: row;
-          
-          .decor{
+
+          .decor {
             display: flex;
             flex-direction: column;
             align-items: center;
             color: $red;
-            .bx{
+            .bx {
               font-size: 44px;
             }
-            .ligne{
+            .ligne {
               width: 3px;
               height: 40px;
               background-color: $red;
             }
           }
-          .info{
-            .year{
+          .info {
+            .year {
               font-size: 14px;
               color: $white;
             }
-            .name{
+            .name {
               font-size: 20px;
               color: $white;
             }
-            .content-info{}
+            .content-info {
+            }
           }
         }
       }
     }
-    .contact{
-      .title{
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 25%;
+      .title {
         color: $white;
         font-family: $font-Pacifico;
         font-size: 36px;
-        padding: 10px;
+        margin: 20px;
+      }
+      .form {
+        form {
+          display: flex;
+          flex-direction: column;
+
+          ::ng-deep .mdc-text-field {
+            border-radius: 10px;
+          }
+        }
+      }
+      .btn-send {
       }
     }
   }
 }
-
-
