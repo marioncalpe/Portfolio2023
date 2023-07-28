@@ -70,6 +70,7 @@ $font-Segoe : 'Segoe UI';
     width: 95%;
     height: 100%;
     overflow: auto;
+    margin: 20px;
     .home{
       display: flex;
       align-items: center;
@@ -134,6 +135,7 @@ $font-Segoe : 'Segoe UI';
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      margin: 20px 20px;
       .title{
         color: $white;
         font-family: $font-Pacifico;
@@ -157,11 +159,53 @@ $font-Segoe : 'Segoe UI';
       }
     }
     .techno{
-      .title{
+      margin: 20px 20px;
+      .title-techno{
+        display: flex;
+        justify-content: center;
         color: $white;
         font-family: $font-Pacifico;
         font-size: 36px;
         padding: 10px;
+      }
+      .content-techno{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 30px;
+        .section{
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .title{
+            font-size: $font-Segoe;
+            font-size: 24px;
+            color: $white;
+          }
+          .techno-container{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            .technos{
+              .cadre-techno{
+                background-color: $white;
+                border-radius: 5px;
+                .bx{
+                  padding : 5px;
+                  font-size: 70px;
+                }
+                img{
+                  padding : 5px;
+                  width: 65px;
+                }
+              }
+              .name-techno{
+  
+              }
+            }
+          }
+          
+        }
       }
     }
     .exp{
