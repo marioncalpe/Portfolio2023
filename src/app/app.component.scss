@@ -200,7 +200,11 @@ $font-Segoe : 'Segoe UI';
                 }
               }
               .name-techno{
-  
+                display: flex;
+                justify-content: center;
+                font-family: $font-Segoe;
+                font-size: 14px;
+                color: $white;
               }
             }
           }
