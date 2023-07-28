@@ -94,6 +94,12 @@ $font-Segoe : 'Segoe UI';
         font-size: 20px;
         color: $white;
       }
+      .logo-social{
+        .bx{
+          color: $white;
+          font-size: 46px;
+        }
+      }
     }
   }
 }
