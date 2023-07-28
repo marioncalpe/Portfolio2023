@@ -3,6 +3,8 @@ $background : #202020;
 $white : #FFF;
 $blue : #0b83b8;
 $red : #ff4385;
+$font-Pacifico : 'Pacifico', cursive;
+$font-Segoe : 'Segoe UI';
 
 .container{
   display: flex;
@@ -30,12 +32,12 @@ $red : #ff4385;
       .m-red {
         position: absolute;
         color: $red;
-        font-family: 'Pacifico', cursive;
+        font-family: $font-Pacifico;
         font-size: 42px;
       }
       .m-blue {
         color: $blue;
-        font-family: 'Pacifico', cursive;
+        font-family: $font-Pacifico;
         font-size: 42px;
         padding-left: 6px;
       }
@@ -83,7 +85,7 @@ $red : #ff4385;
         }
       }
       .name{
-        font-family: 'Pacifico', cursive;
+        font-family: $font-Pacifico;
         font-size: 36px;
         color: $white;
       }
