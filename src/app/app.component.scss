@@ -174,15 +174,58 @@ $font-Segoe: "Segoe UI";
         display: flex;
         flex-direction: row;
         gap: 50px;
-        .technos {
-          border-radius: 20px;
+          
           .bx {
+            border-radius: 20px;
             padding: 5px;
             font-size: 50px;
             color: $background;
           }
+          .bxl-sass{
+            background: linear-gradient(135deg,#e9acff .3%,#ff4fce 99.68%);
+            box-shadow: 0px 0px 20px 1px rgba(233,172,255,0.5); 
+          }
+          .bxl-angular{
+            background: linear-gradient(136.47deg,#ffa7c1 -.27%,#ff5050 99.75%);
+            box-shadow: 0px 0px 20px 1px #ffa7c1; 
+          }
+          .bxl-typescript{
+            background: linear-gradient(225deg,#b1b5ff .07%,#4260ff 99.79%);
+            box-shadow: 0px 0px 20px 1px #b1b5ff; 
+          }
+          .bxs-coin-stack{
+            background: linear-gradient(135deg,#e7a4ff -.49%,#a532ff 100.13%);
+            box-shadow: 0px 0px 20px 1px #e7a4ff; 
+          }
+          .bxl-javascript{
+            background: linear-gradient(45deg,#ffcca8 .21%,#fffa87 99.93%);
+            box-shadow: 0px 0px 20px 1px #fffa87; 
+          }
+          .bxl-php{
+            background: linear-gradient(225deg,#99daff .14%,#a966ff 99.86%);
+            box-shadow: 0px 0px 20px 1px #99daff;
+          }
+          .bxl-git{
+            background: linear-gradient(225deg,#ffd6bf .14%,#ff7272 99.86%);
+            box-shadow: 0px 0px 20px 1px #ff7272;
+          }
+          .bxl-github{
+            background: linear-gradient(45deg,#89e3ff .29%,#cfffb8 50.14%,#ffe177);
+            box-shadow: 0px 0px 20px 1px #89e3ff;
+          }
+          .bxl-gitlab{
+            background: linear-gradient(225deg,#fff6a7,#ff6e41 99.71%);
+            box-shadow: 0px 0px 20px 1px #ff6e41;
+          }
+          .bxl-trello{
+            background: linear-gradient(225.22deg,#93ffff -.09%,#59a5ff 100.01%);
+            box-shadow: 0px 0px 20px 1px #59a5ff;
+          }
+          .bxl-figma{
+            background: linear-gradient(225.22deg,#aae0ff -.01%,#5affce 100.08%);
+            box-shadow: 0px 0px 20px 1px #5affce;
+          }
         }
-      }
     }
     .exp {
       padding: 50px 25%;
