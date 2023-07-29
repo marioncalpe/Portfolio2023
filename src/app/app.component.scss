@@ -116,35 +116,73 @@ $font-Segoe: "Segoe UI";
         font-family: $font-Segoe;
         font-size: 20px;
         color: $white;
-      }
-      .logo-social {
-        display: flex;
-        gap: 21px;
-        .bx {
-          color: $white;
-          font-size: 46px;
-
-          &:hover {
-            cursor: pointer;
-          }
-        }
-      }
-      .btn-contact {
+        text-transform: uppercase;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px 40px;
-        border-radius: 25px;
-        border: 3px solid $red;
-        font-family: $font-Pacifico;
-        font-size: 24px;
-        color: $red;
-
-        &:hover {
-          background-color: $red;
-          color: $background;
-          cursor: pointer;
+        p {
+          text-shadow: 0 0 7px rgba(255, 255, 255, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
         }
+        // .animation {
+        //   height: 50px;
+        //   overflow: hidden;
+        //   margin-left: 1rem;
+        // }
+        
+        // .animation > div > div {
+        //   padding: 0 0;
+        //   margin-bottom: 2.10rem;
+        //   display: inline-block;
+        // }
+        // .animation div:first-child {
+        //   animation: text-animation 8s infinite;
+        // }
+        // @keyframes text-animation {
+        //   0% { margin-top: 0; };
+        //   16% { margin-top: -2.81rem; };
+        //   32% { margin-top: -5.62rem; };
+        //   48% { margin-top: -8.43rem; };
+        //   64% { margin-top: -11.24rem; };
+        //   80% { margin-top: -14.05rem; };
+        //   96% { margin-top: -16.86rem; };
+        //   100% { margin-top: 0; };
+        // }
+      }
+      .logo-social {
+        display: flex;
+        gap: 20px;
+        .contour{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 5px;
+          padding: 5px;
+          border-radius: 25px;
+          background: rgb(255,67,133);
+          background: linear-gradient(90deg, rgba(255,67,133,1) -50%, rgba(11,131,184,1) 150%);
+          cursor: pointer;
+          .bx {
+            color: $white;
+            font-size: 28px;
+            padding: 5px;
+            &:hover {
+              // color: $background;
+              // padding: 5px;
+              // border-radius: 20px;
+              // background: #FF4385;
+              // background: -moz-linear-gradient(left, #FF4385 0%, #0B83B8 100%);
+              // background: -webkit-linear-gradient(left, #FF4385 0%, #0B83B8 100%);
+              // background: linear-gradient(to right, #FF4385 0%, #0B83B8 100%);
+              // box-shadow: 0px 0px 10px rgba(255, 67, 133, 0.116);
+              cursor: pointer;
+            }
+          }
+          .name-social{
+            color: $white;
+            padding-right: 5px;
+          }
+        }
+       
       }
     }
     .projet {

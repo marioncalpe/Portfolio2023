@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import 'boxicons';
 @Component({
@@ -6,15 +6,9 @@ import 'boxicons';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'Portfolio';
-  liste_bio = [
-    'Développeur Front-End',
-    'Curieuse',
-    'Fan de jeu vidéo',
-    'Passionée',
-    'Fan de musique',
-    'Dans le partage'
-  ]
-  
+
+  ngOnInit() {
+  }
 }
