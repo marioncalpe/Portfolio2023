@@ -60,12 +60,11 @@ $font-Segoe: "Segoe UI";
         color: $white;
         cursor: pointer;
         &:hover {
-          
-            
             background: #FF4385;
             background: -moz-linear-gradient(left, #FF4385 0%, #0B83B8 100%);
             background: -webkit-linear-gradient(left, #FF4385 0%, #0B83B8 100%);
             background: linear-gradient(to right, #FF4385 0%, #0B83B8 100%);
+            text-shadow: 0px 0px 10px rgba(255,67,133,0.5);
             background-clip: text;
             -webkit-background-clip: text;
           &::before{
