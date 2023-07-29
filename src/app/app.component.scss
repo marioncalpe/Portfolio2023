@@ -27,13 +27,21 @@ $font-Segoe: "Segoe UI";
     .logo-main {
       display: flex;
       justify-content: center;
-      height: 5%;
-      padding-top: 10px;
+      align-items: center;
+      height:5%;
       .m-red {
         position: absolute;
-        color: $red;
+        background: #FF4385;
+        background: -webkit-linear-gradient(to top left, #FF4385 0%, #0B83B8 100%);
+        background: -moz-linear-gradient(to top left, #FF4385 0%, #0B83B8 100%);
+        background: linear-gradient(to top left, #FF4385 0%, #0B83B8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-family: $font-Pacifico;
         font-size: 42px;
+        line-height: 40px;
+        text-shadow: 0px 0px 10px rgba(255,67,133,0.5);
+        letter-spacing: 0;
       }
       .m-blue {
         color: $blue;
