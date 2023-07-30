@@ -5,8 +5,8 @@ $blue: #0b83b8;
 $red: #ff4385;
 $font-Pacifico: "Pacifico", cursive;
 $font-Segoe: "Segoe UI";
-$gradien : linear-gradient(249.72deg,#ffa5d0,#c89dff 50%,#97fff9);
-$textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
+$gradien: linear-gradient(249.72deg, #ffa5d0, #c89dff 50%, #97fff9);
+$textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
 
 .container {
   display: flex;
@@ -30,7 +30,7 @@ $textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
       display: flex;
       justify-content: center;
       align-items: center;
-      height:5%;
+      height: 5%;
       .m-red {
         position: absolute;
         background: $gradien;
@@ -59,11 +59,11 @@ $textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
         color: $white;
         cursor: pointer;
         &:hover {
-            background: $gradien;
-            text-shadow: $textshadowgradien;
-            background-clip: text;
-            -webkit-background-clip: text;
-          &::before{
+          background: $gradien;
+          text-shadow: $textshadowgradien;
+          background-clip: text;
+          -webkit-background-clip: text;
+          &::before {
             color: transparent;
           }
         }
@@ -103,7 +103,7 @@ $textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
           margin-top: -100px;
         }
       }
-      .infos{
+      .infos {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -112,10 +112,10 @@ $textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
           font-family: $font-Pacifico;
           font-size: 36px;
           color: $white;
-          text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+          text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+            0 0 3px rgba(255, 255, 255, 0.3);
         }
         .bio {
-          
           font-family: $font-Segoe;
           font-size: 20px;
           color: $white;
@@ -128,7 +128,7 @@ $textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
           margin-top: 50px;
           display: flex;
           gap: 20px;
-          .contour{
+          .contour {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -153,14 +153,13 @@ $textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
                 cursor: pointer;
               }
             }
-            .name-social{
+            .name-social {
               color: $white;
               padding-right: 5px;
             }
           }
         }
       }
-    
     }
     .projet {
       display: flex;
@@ -184,7 +183,7 @@ $textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
             height: 300px;
             width: 400px;
             backdrop-filter: blur(7.5px);
-            box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.068); 
+            box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.068);
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 50px;
             padding: 32px;
@@ -209,61 +208,157 @@ $textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
         display: flex;
         flex-direction: row;
         gap: 50px;
-          
-          .bx {
-            border-radius: 20px;
-            padding: 5px;
-            font-size: 50px;
-            color: $background;
-          }
-          .bxl-sass{
-            background: linear-gradient(135deg,#e9acff .3%,#ff4fce 99.68%);
-            box-shadow: 0px 0px 20px 1px rgba(233,172,255,0.5); 
-          }
-          .bxl-angular{
-            background: linear-gradient(136.47deg,#ffa7c1 -.27%,#ff5050 99.75%);
-            box-shadow: 0px 0px 20px 1px #ffa7c1; 
-          }
-          .bxl-typescript{
-            background: linear-gradient(225deg,#b1b5ff .07%,#4260ff 99.79%);
-            box-shadow: 0px 0px 20px 1px #b1b5ff; 
-          }
-          .bxs-coin-stack{
-            background: linear-gradient(135deg,#e7a4ff -.49%,#a532ff 100.13%);
-            box-shadow: 0px 0px 20px 1px #e7a4ff; 
-          }
-          .bxl-javascript{
-            background: linear-gradient(45deg,#ffcca8 .21%,#fffa87 99.93%);
-            box-shadow: 0px 0px 20px 1px #fffa87; 
-          }
-          .bxl-php{
-            background: linear-gradient(225deg,#99daff .14%,#a966ff 99.86%);
-            box-shadow: 0px 0px 20px 1px #99daff;
-          }
-          .bxl-git{
-            background: linear-gradient(225deg,#ffd6bf .14%,#ff7272 99.86%);
-            box-shadow: 0px 0px 20px 1px #ff7272;
-          }
-          .bxl-github{
-            background: linear-gradient(45deg,#89e3ff .29%,#cfffb8 50.14%,#ffe177);
-            box-shadow: 0px 0px 20px 1px #89e3ff;
-          }
-          .bxl-gitlab{
-            background: linear-gradient(225deg,#fff6a7,#ff6e41 99.71%);
-            box-shadow: 0px 0px 20px 1px #ff6e41;
-          }
-          .bxl-trello{
-            background: linear-gradient(225.22deg,#93ffff -.09%,#59a5ff 100.01%);
-            box-shadow: 0px 0px 20px 1px #59a5ff;
-          }
-          .bxl-figma{
-            background: linear-gradient(225.22deg,#aae0ff -.01%,#5affce 100.08%);
-            box-shadow: 0px 0px 20px 1px #5affce;
-          }
+
+        .bx {
+          border-radius: 20px;
+          padding: 5px;
+          font-size: 50px;
+          color: $background;
         }
+        .bxl-sass {
+          background: linear-gradient(135deg, #e9acff 0.3%, #ff4fce 99.68%);
+          box-shadow: 0px 0px 20px 1px rgba(233, 172, 255, 0.5);
+        }
+        .bxl-angular {
+          background: linear-gradient(
+            136.47deg,
+            #ffa7c1 -0.27%,
+            #ff5050 99.75%
+          );
+          box-shadow: 0px 0px 20px 1px #ffa7c1;
+        }
+        .bxl-typescript {
+          background: linear-gradient(225deg, #b1b5ff 0.07%, #4260ff 99.79%);
+          box-shadow: 0px 0px 20px 1px #b1b5ff;
+        }
+        .bxs-coin-stack {
+          background: linear-gradient(135deg, #e7a4ff -0.49%, #a532ff 100.13%);
+          box-shadow: 0px 0px 20px 1px #e7a4ff;
+        }
+        .bxl-javascript {
+          background: linear-gradient(45deg, #ffcca8 0.21%, #fffa87 99.93%);
+          box-shadow: 0px 0px 20px 1px #fffa87;
+        }
+        .bxl-php {
+          background: linear-gradient(225deg, #99daff 0.14%, #a966ff 99.86%);
+          box-shadow: 0px 0px 20px 1px #99daff;
+        }
+        .bxl-git {
+          background: linear-gradient(225deg, #ffd6bf 0.14%, #ff7272 99.86%);
+          box-shadow: 0px 0px 20px 1px #ff7272;
+        }
+        .bxl-github {
+          background: linear-gradient(
+            45deg,
+            #89e3ff 0.29%,
+            #cfffb8 50.14%,
+            #ffe177
+          );
+          box-shadow: 0px 0px 20px 1px #89e3ff;
+        }
+        .bxl-gitlab {
+          background: linear-gradient(225deg, #fff6a7, #ff6e41 99.71%);
+          box-shadow: 0px 0px 20px 1px #ff6e41;
+        }
+        .bxl-trello {
+          background: linear-gradient(
+            225.22deg,
+            #93ffff -0.09%,
+            #59a5ff 100.01%
+          );
+          box-shadow: 0px 0px 20px 1px #59a5ff;
+        }
+        .bxl-figma {
+          background: linear-gradient(
+            225.22deg,
+            #aae0ff -0.01%,
+            #5affce 100.08%
+          );
+          box-shadow: 0px 0px 20px 1px #5affce;
+        }
+      }
     }
     .exp {
-      padding: 50px 25%;
+      padding: 50px 0;
+
+      /* ---- Timeline ---- */
+      ol {
+        position: relative;
+        display: block;
+        margin: 100px;
+        height: 4px;
+        background: rgba(232, 168, 255, 1);
+      }
+      ol::before,
+      ol::after {
+        content: "";
+        position: absolute;
+        top: -8px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 10px;
+        border: 10px solid rgba(232, 168, 255, 1);
+      }
+      ol::before {
+        left: -5px;
+      }
+      ol::after {
+        right: -10px;
+        border: 10px solid transparent;
+        border-right: 0;
+        border-left: 20px solid rgba(232, 168, 255, 1);
+        border-radius: 3px;
+      }
+
+      /* ---- Timeline elements ---- */
+      li {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 200px;
+        font-family: $font-Segoe;
+        font-size: 20px;
+        height: 50px;
+      }
+      li .date {
+        position: absolute;
+        top: -47px;
+        left: 36%;
+        color: #ffffff;
+      }
+      li .point {
+        content: "";
+        top: -4px;
+        left: 43%;
+        display: block;
+        width: 6px;
+        height: 6px;
+        border: 4px solid rgba(232, 168, 255, 1);
+        border-radius: 10px;
+        background: $background;
+        position: absolute;
+      }
+      li .description {
+        display: none;
+        background: $gradien;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 20px;
+        position: relative;
+        font-weight: normal;
+        z-index: 1;
+      }
+
+      /* ---- Hover effects ---- */
+      li:hover {
+        cursor: pointer;
+        color: #ffffff;
+      }
+      li:hover .description {
+        display: block;
+      }
+
       .title {
         display: flex;
         justify-content: center;
@@ -271,52 +366,6 @@ $textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
         font-family: $font-Pacifico;
         font-size: 36px;
         padding: 10px;
-      }
-      .content-exp {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 20px;
-        gap: 100px;
-        .student {
-          display: flex;
-          flex-direction: column;
-        }
-        .work {
-          display: flex;
-          flex-direction: column;
-        }
-        .item {
-          display: flex;
-          flex-direction: row;
-
-          .decor {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: $red;
-            .bx {
-              font-size: 44px;
-            }
-            .ligne {
-              width: 3px;
-              height: 40px;
-              background-color: $red;
-            }
-          }
-          .info {
-            .year {
-              font-size: 14px;
-              color: $white;
-            }
-            .name {
-              font-size: 20px;
-              color: $white;
-            }
-            .content-info {
-            }
-          }
-        }
       }
     }
     .contact {
