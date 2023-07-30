@@ -5,6 +5,8 @@ $blue: #0b83b8;
 $red: #ff4385;
 $font-Pacifico: "Pacifico", cursive;
 $font-Segoe: "Segoe UI";
+$gradien : linear-gradient(249.72deg,#ffa5d0,#c89dff 50%,#97fff9);
+$textshadowgradien : 0 0px 20px rgba(232,168,255,.50);
 
 .container {
   display: flex;
@@ -31,16 +33,13 @@ $font-Segoe: "Segoe UI";
       height:5%;
       .m-red {
         position: absolute;
-        background: #FF4385;
-        background: -webkit-linear-gradient(to top left, #FF4385 0%, #0B83B8 100%);
-        background: -moz-linear-gradient(to top left, #FF4385 0%, #0B83B8 100%);
-        background: linear-gradient(to top left, #FF4385 0%, #0B83B8 100%);
+        background: $gradien;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: $font-Pacifico;
         font-size: 42px;
         line-height: 40px;
-        text-shadow: 0px 0px 10px rgba(255,67,133,0.5);
+        text-shadow: $textshadowgradien;
         letter-spacing: 0;
       }
       // .m-blue {
@@ -60,11 +59,8 @@ $font-Segoe: "Segoe UI";
         color: $white;
         cursor: pointer;
         &:hover {
-            background: #FF4385;
-            background: -moz-linear-gradient(left, #FF4385 0%, #0B83B8 100%);
-            background: -webkit-linear-gradient(left, #FF4385 0%, #0B83B8 100%);
-            background: linear-gradient(to right, #FF4385 0%, #0B83B8 100%);
-            text-shadow: 0px 0px 10px rgba(255,67,133,0.5);
+            background: $gradien;
+            text-shadow: $textshadowgradien;
             background-clip: text;
             -webkit-background-clip: text;
           &::before{
@@ -116,6 +112,7 @@ $font-Segoe: "Segoe UI";
           font-family: $font-Pacifico;
           font-size: 36px;
           color: $white;
+          text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
         }
         .bio {
           
@@ -138,8 +135,7 @@ $font-Segoe: "Segoe UI";
             gap: 5px;
             padding: 5px;
             border-radius: 25px;
-            background: rgb(255,67,133);
-            background: linear-gradient(90deg, rgba(255,67,133,1) -50%, rgba(11,131,184,1) 150%);
+            background: $gradien;
             cursor: pointer;
             .bx {
               color: $white;
