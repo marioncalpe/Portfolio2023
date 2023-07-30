@@ -215,6 +215,16 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           font-size: 50px;
           color: $background;
         }
+        img{
+          background: $gradien;
+          box-shadow: $textshadowgradien;
+          border-radius: 20px;
+          padding: 5px;
+        }
+        .bx-layout{
+          background: linear-gradient(135deg, #ffacd3 0.3%, #faeff7 99.68%);
+          box-shadow: 0px 0px 20px 1px rgba(255, 172, 220, 0.5);
+        }
         .bxl-sass {
           background: linear-gradient(135deg, #e9acff 0.3%, #ff4fce 99.68%);
           box-shadow: 0px 0px 20px 1px rgba(233, 172, 255, 0.5);
@@ -310,7 +320,6 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         border-left: 20px solid rgba(232, 168, 255, 1);
         border-radius: 3px;
       }
-
       /* ---- Timeline elements ---- */
       li {
         position: relative;
@@ -319,6 +328,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         width: 200px;
         font-family: $font-Segoe;
         font-size: 20px;
+        text-align: center;
         height: 50px;
       }
       li .date {
@@ -341,7 +351,8 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       }
       li .description {
         display: none;
-        background: $gradien;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.068);
         padding: 10px;
         margin-top: 20px;
         border-radius: 20px;
