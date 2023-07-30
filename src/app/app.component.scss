@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-$background: #202020;
+$background: #0a0a0a;
 $white: #fff;
 $blue: #0b83b8;
 $red: #ff4385;
@@ -223,11 +223,11 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         }
         .bx-layout{
           background: linear-gradient(135deg, #ffacd3 0.3%, #faeff7 99.68%);
-          box-shadow: 0px 0px 20px 1px rgba(255, 172, 220, 0.5);
+          box-shadow: $textshadowgradien;
         }
         .bxl-sass {
           background: linear-gradient(135deg, #e9acff 0.3%, #ff4fce 99.68%);
-          box-shadow: 0px 0px 20px 1px rgba(233, 172, 255, 0.5);
+          box-shadow: $textshadowgradien;
         }
         .bxl-angular {
           background: linear-gradient(
@@ -235,27 +235,27 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             #ffa7c1 -0.27%,
             #ff5050 99.75%
           );
-          box-shadow: 0px 0px 20px 1px #ffa7c1;
+          box-shadow: $textshadowgradien;
         }
         .bxl-typescript {
           background: linear-gradient(225deg, #b1b5ff 0.07%, #4260ff 99.79%);
-          box-shadow: 0px 0px 20px 1px #b1b5ff;
+          box-shadow: $textshadowgradien;
         }
         .bxs-coin-stack {
           background: linear-gradient(135deg, #e7a4ff -0.49%, #a532ff 100.13%);
-          box-shadow: 0px 0px 20px 1px #e7a4ff;
+          box-shadow: $textshadowgradien;
         }
         .bxl-javascript {
           background: linear-gradient(45deg, #ffcca8 0.21%, #fffa87 99.93%);
-          box-shadow: 0px 0px 20px 1px #fffa87;
+          box-shadow: $textshadowgradien;
         }
         .bxl-php {
           background: linear-gradient(225deg, #99daff 0.14%, #a966ff 99.86%);
-          box-shadow: 0px 0px 20px 1px #99daff;
+          box-shadow: $textshadowgradien;
         }
         .bxl-git {
           background: linear-gradient(225deg, #ffd6bf 0.14%, #ff7272 99.86%);
-          box-shadow: 0px 0px 20px 1px #ff7272;
+          box-shadow: $textshadowgradien;
         }
         .bxl-github {
           background: linear-gradient(
@@ -264,11 +264,11 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             #cfffb8 50.14%,
             #ffe177
           );
-          box-shadow: 0px 0px 20px 1px #89e3ff;
+          box-shadow: $textshadowgradien;
         }
         .bxl-gitlab {
           background: linear-gradient(225deg, #fff6a7, #ff6e41 99.71%);
-          box-shadow: 0px 0px 20px 1px #ff6e41;
+          box-shadow: $textshadowgradien;
         }
         .bxl-trello {
           background: linear-gradient(
@@ -276,7 +276,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             #93ffff -0.09%,
             #59a5ff 100.01%
           );
-          box-shadow: 0px 0px 20px 1px #59a5ff;
+          box-shadow: $textshadowgradien;
         }
         .bxl-figma {
           background: linear-gradient(
@@ -284,7 +284,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             #aae0ff -0.01%,
             #5affce 100.08%
           );
-          box-shadow: 0px 0px 20px 1px #5affce;
+          box-shadow: $textshadowgradien;
         }
       }
     }
@@ -353,7 +353,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         display: none;
         background: rgba(255, 255, 255, 0.1);
         box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.068);
-        padding: 10px;
+        padding: 20px;
         margin-top: 20px;
         border-radius: 20px;
         position: relative;
@@ -364,19 +364,23 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         .periode{
           font-family: $font-Segoe;
           font-size: 12px;
+          text-align: start;
+          color: #ffffff71;
+          padding-bottom: 10px;
         }
         .titleexp{
           font-family: $font-Segoe;
           font-size: 18px;
+          padding-bottom: 20px;
         }
         .techno{
           display: flex;
-          align-items: center;
+          justify-content: center;
           flex-direction: row;
-          flex-wrap: wrap;
           padding: 0;
           .bx{
-            font-size: 36px;
+            font-size: 24px;
+            color: #ffffff71;
           }
         }
       }
