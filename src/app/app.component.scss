@@ -359,6 +359,26 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         position: relative;
         font-weight: normal;
         z-index: 1;
+        font-family: $font-Segoe;
+
+        .periode{
+          font-family: $font-Segoe;
+          font-size: 12px;
+        }
+        .titleexp{
+          font-family: $font-Segoe;
+          font-size: 18px;
+        }
+        .techno{
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 0;
+          .bx{
+            font-size: 36px;
+          }
+        }
       }
 
       /* ---- Hover effects ---- */
