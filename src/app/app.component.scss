@@ -296,109 +296,6 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     }
     .exp {
       padding: 50px 0;
-
-      // /* ---- Timeline ---- */
-      // ol {
-      //   position: relative;
-      //   display: block;
-      //   margin: 100px;
-      //   height: 4px;
-      //   background: rgba(232, 168, 255, 1);
-      // }
-      // ol::before,
-      // ol::after {
-      //   content: "";
-      //   position: absolute;
-      //   top: -8px;
-      //   display: block;
-      //   width: 0;
-      //   height: 0;
-      //   border-radius: 10px;
-      //   border: 10px solid rgba(232, 168, 255, 1);
-      // }
-      // ol::before {
-      //   left: -5px;
-      // }
-      // ol::after {
-      //   right: -10px;
-      //   border: 10px solid transparent;
-      //   border-right: 0;
-      //   border-left: 20px solid rgba(232, 168, 255, 1);
-      //   border-radius: 3px;
-      // }
-      // /* ---- Timeline elements ---- */
-      // li {
-      //   position: relative;
-      //   display: inline-block;
-      //   float: left;
-      //   width: 200px;
-      //   font-family: $font-Segoe;
-      //   font-size: 20px;
-      //   text-align: center;
-      //   height: 50px;
-      // }
-      // li .date {
-      //   position: absolute;
-      //   top: -47px;
-      //   left: 36%;
-      //   color: #ffffff;
-      // }
-      // li .point {
-      //   content: "";
-      //   top: -4px;
-      //   left: 43%;
-      //   display: block;
-      //   width: 6px;
-      //   height: 6px;
-      //   border: 4px solid rgba(232, 168, 255, 1);
-      //   border-radius: 10px;
-      //   background: $background;
-      //   position: absolute;
-      // }
-      // li .description {
-      //   display: none;
-      //   background: rgba(255, 255, 255, 0.1);
-      //   box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.068);
-      //   padding: 20px;
-      //   margin-top: 20px;
-      //   border-radius: 20px;
-      //   position: relative;
-      //   font-weight: normal;
-      //   z-index: 1;
-      //   font-family: $font-Segoe;
-
-      //   .periode{
-      //     font-family: $font-Segoe;
-      //     font-size: 12px;
-      //     text-align: start;
-      //     color: #ffffff71;
-      //     padding-bottom: 10px;
-      //   }
-      //   .titleexp{
-      //     font-family: $font-Segoe;
-      //     font-size: 18px;
-      //     padding-bottom: 20px;
-      //   }
-      //   .techno{
-      //     display: flex;
-      //     justify-content: center;
-      //     flex-direction: row;
-      //     padding: 0;
-      //     .bx{
-      //       font-size: 24px;
-      //       color: #ffffff71;
-      //     }
-      //   }
-      // }
-
-      // /* ---- Hover effects ---- */
-      // li:hover {
-      //   cursor: pointer;
-      //   color: #ffffff;
-      // }
-      // li:hover .description {
-      //   display: block;
-      // }
       .cd-container {
         width: 90%;
         max-width: 1080px;
@@ -658,7 +555,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px 25%;
+      padding: 20px 5%;
       .title {
         color: $white;
         font-family: $font-Pacifico;
@@ -666,13 +563,34 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         margin: 20px;
       }
       .form {
+        padding-top: 20px;
         form {
           display: flex;
           flex-direction: column;
 
           ::ng-deep .mdc-text-field {
             border-radius: 10px;
+            backdrop-filter: blur(7.5px);
+            box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
+            background: rgba(107, 107, 107, 0.1);
+            color: $white;
           }
+          mat-label{
+            color: $white;
+          }
+          .namemail{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+            .mat-mdc-form-field{
+              min-width: 400px;
+            }
+            .name{}
+            .email{}
+          }
+          .subject{}
+          .message{}
         }
       }
       .btn-send {
