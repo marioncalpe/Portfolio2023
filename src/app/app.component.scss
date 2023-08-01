@@ -148,16 +148,6 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
               font-size: 28px;
               padding: 5px;
             }
-            .name-social {
-              display: none;
-            }
-            &:hover{
-              .name-social{
-                display: block;
-                color: $background;
-                padding-right: 5px;
-              }
-            }
           }
         }
       }
