@@ -591,9 +591,38 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           }
           .subject{}
           .message{}
+          .btn-send {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)) padding-box,
+              linear-gradient(45deg,#9edbff,#b3a0ff 50%,#f29dff) border-box;
+            border-radius: 50em;
+            border: 2px solid transparent;
+            backdrop-filter: blur(7.5px);
+            box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
+            cursor: pointer;
+            &:hover{
+              background: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0, 0)) padding-box,
+              linear-gradient(45deg,#9edbff,#b3a0ff 50%,#f29dff) border-box;
+              color: #0a0a0a;
+            }
+            .txt{
+              padding: 10px;
+              background: $gradien;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-family: $font-Pacifico;
+              font-size: 24px;
+              line-height: 40px;
+              text-shadow: $textshadowgradien;
+              letter-spacing: 0;
+              &:hover{
+                color: #0a0a0a;
+              }
+            }
+            
+          }
         }
-      }
-      .btn-send {
       }
     }
   }
