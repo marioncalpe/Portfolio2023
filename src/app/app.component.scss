@@ -639,20 +639,25 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
               background: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0, 0)) padding-box,
               linear-gradient(45deg,#9edbff,#b3a0ff 50%,#f29dff) border-box;
               color: #0a0a0a;
+              .txt{
+                color: #0a0a0a;
+                -webkit-background-clip: unset;
+                background-clip: unset;
+                background: transparent;
+                -webkit-text-fill-color: unset;
+              }
             }
             .txt{
               padding: 10px;
               background: $gradien;
               -webkit-background-clip: text;
+              background-clip: text;
               -webkit-text-fill-color: transparent;
               font-family: $font-Pacifico;
               font-size: 24px;
               line-height: 40px;
               text-shadow: $textshadowgradien;
               letter-spacing: 0;
-              &:hover{
-                color: #0a0a0a;
-              }
             }
             
           }
