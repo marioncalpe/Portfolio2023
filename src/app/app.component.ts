@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 import 'boxicons';
 @Component({
@@ -10,5 +10,15 @@ export class AppComponent implements OnInit{
   title = 'Portfolio';
 
   ngOnInit() {
+  }
+
+  constructor(private elementRef: ElementRef) {}
+
+  on() {
+    this.elementRef.nativeElement.querySelector("#overlay").style.display = "block";
+  }
+
+  off() {
+    this.elementRef.nativeElement.querySelector("#overlay").style.display = "none";
   }
 }
