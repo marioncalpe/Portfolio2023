@@ -104,62 +104,6 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         position: absolute;
         overflow: hidden;
       }
-      // .one{
-      //   position: absolute;
-      //   left: 45%;
-      //   top: 20%;
-      // }
-      // .two{
-      //   position: absolute;
-      //   left: 15%;
-      //   top: 70%;
-      // }
-      // .three{
-      //   position: absolute;
-      //   left: 60%;
-      //   top: 35%;
-      // }
-      // .four{
-      //   position: absolute;
-      //   left: 25%;
-      //   top: 80%;
-      // }
-      // .six{
-      //   position: absolute;
-      //   left: 90%;
-      //   top: 10%;
-      // }
-      // .seven{
-      //   position: absolute;
-      //   left: 70%;
-      //   top: 50%;
-      // }
-      // .eight{
-      //   position: absolute;
-      //   left: 40%;
-      //   top: 5%;
-      // }
-    
-      // .nive{
-      //   position: absolute;
-      //   left: 10%;
-      //   top: 30%;
-      // }
-      // .ten{
-      //   position: absolute;
-      //   left: 85%;
-      //   top: 70%;
-      // }
-      // .eleven{
-      //   position: absolute;
-      //   left: 20%;
-      //   top: 60%;
-      // }
-      // .twelve{
-      //   position: absolute;
-      //   left: 75%;
-      //   top: 15%;
-      // }
     } 
     .home {
       display: flex;
@@ -565,7 +509,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         // color background item
         backdrop-filter: blur(7.5px);
         box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
-        background: rgba(107, 107, 107, 0.1);
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 2px;
         padding: 1em;
         .timeline-content-info {
@@ -737,7 +681,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             border-radius: 10px;
             backdrop-filter: blur(7.5px);
             box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
-            background: rgba(107, 107, 107, 0.1);
+            background: rgba(255, 255, 255, 0.1);
             color: $white;
           }
           mat-label {
