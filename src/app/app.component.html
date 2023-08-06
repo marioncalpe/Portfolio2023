@@ -80,9 +80,9 @@
       <div class="title">Projet</div>
       <div class="content-projet">
         <div class="projet">
-          <div class="cadre">
+          <div class="cadre" (click)="showModal = true">
             <img src="assets\portfolio.png" />
-            <div class="overlay-projet" id="overlay">
+            <div class="overlay-projet" id="overlay" >
               <div class="row">
                 <div class="techno">
                   <i class="bx bxl-angular"></i>
@@ -165,28 +165,40 @@
       <div class="content-techno">
         <!-- sass -->
         <i class="bx bxl-sass"></i>
+        <div class="sass">SCSS</div>
         <!-- angular -->
         <i class="bx bxl-angular"></i>
+        <div class="angular">Angular</div>
         <!-- typescript -->
         <i class="bx bxl-typescript"></i>
+        <div class="typescript">TypeScript</div>
         <!-- mysql -->
         <i class="bx bxs-coin-stack"></i>
+        <div class="mysql">MySQL</div>
         <!-- javascript -->
         <i class="bx bxl-javascript"></i>
+        <div class="javascript">JavaScript</div>
         <!-- php -->
         <i class="bx bxl-php"></i>
+        <div class="php">Php</div>
         <!-- git -->
         <i class="bx bxl-git"></i>
+        <div class="git">Git</div>
         <!-- github -->
         <i class="bx bxl-github"></i>
+        <div class="github">Github</div>
         <!-- gitlab -->
         <i class="bx bxl-gitlab"></i>
+        <div class="gitlab">Gitlab</div>
         <!-- trello -->
         <i class="bx bxl-trello"></i>
+        <div class="trello">Trello</div>
         <!-- figma -->
         <i class="bx bxl-figma"></i>
+        <div class="figma">Figma</div>
         <!-- ux / ui -->
         <i class="bx bx-layout"></i>
+        <div class="ux">UX/UI</div>
         <!-- agile -->
         <img
           width="50"
@@ -194,6 +206,7 @@
           src="https://img.icons8.com/windows/64/agile.png"
           alt="agile"
         />
+        <div class="agile">Agile</div>
       </div>
     </div>
     <div class="exp" id="exp">
@@ -405,5 +418,6 @@
     <div class="svg">
       <img src="assets\background.png" class="backcircuit"/>
     </div>
+    <modal [isVisible]="showModal" [ngStyle]="{'display': showModal ? 'block' : 'none'}" ></modal>
   </div>
 </div>

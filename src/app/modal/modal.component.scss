@@ -1,0 +1,35 @@
+/* Style pour le fond sombre semi-transparent */
+.modal {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style pour le contenu du modal */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+  }
+  
+  /* Style pour le titre du modal */
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  /* Style pour le bouton de fermeture */
+  .close-btn {
+    cursor: pointer;
+    color: #888;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+  }

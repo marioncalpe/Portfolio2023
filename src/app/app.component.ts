@@ -8,8 +8,9 @@ import 'boxicons';
 })
 export class AppComponent implements OnInit{
   title = 'Portfolio';
-
+  showModal: boolean = false;
   ngOnInit() {
+    this.showModal = false;
   }
 
   constructor(private elementRef: ElementRef) {}

@@ -6,16 +6,17 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input'; // Import other necessary Angular Material modules if you use them.
 
 import { AppComponent } from './app.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ModalComponent],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule // Add other necessary Angular Material modules to the 'imports' array.
+    MatInputModule, // Add other necessary Angular Material modules to the 'imports' array.
   ],
   providers: [],
   bootstrap: [AppComponent]
