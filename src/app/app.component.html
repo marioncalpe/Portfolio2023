@@ -27,7 +27,6 @@
     <div class="text-certificat">© 2023 Marion Calpena.</div>
   </div>
   <div class="content">
-    
     <div class="home" id="home">
       <div class="avatar">
         <img src="assets\IMG_20230617_202924.jpg" />
@@ -40,8 +39,8 @@
             👩‍💻 Développeuse Front-end Junior passionnée par la création et
             l'innovation ! Curieuse d'apprendre auprès des autres, je me suis
             formée en UX et UI pour concevoir des interfaces utilisatreurs
-            intuitives. Mon objectif est de créer des expériences fluides
-            et agréables pour les utilisatreurs.
+            intuitives. Mon objectif est de créer des expériences fluides et
+            agréables pour les utilisatreurs.
           </p>
 
           <p>
@@ -80,25 +79,25 @@
       <div class="title">Projet</div>
       <div class="content-projet">
         <div class="projet">
-          <div class="cadre" (click)="openPortfolio()">
+          <div class="cadre" (click)="openPortfolio($event)">
             <img src="assets\portfolio.png" />
-            <div class="overlay-projet" id="overlay" >
+            <div class="overlay-projet" id="overlay">
               <div class="row">
                 <div class="techno">
                   <i class="bx bxl-angular"></i>
-                  <i class='bx bxl-typescript' ></i>
+                  <i class="bx bxl-typescript"></i>
                   <i class="bx bxl-sass"></i>
                 </div>
                 <div class="date">Août 2023</div>
               </div>
               <div class="name">Portfolio</div>
               <div class="description">
-                Un recueil organisé et visuellement attractif
-                des réalisations, projets et compétences d'une personne. Il
-                permet de présenter de manière professionnelle son travail passé
-                et ses capacités dans le but de se démarquer dans son domaine
-                d'expertise. C'est un outil essentiel pour mettre en valeur les
-                savoir-faire et leur expérience.
+                Un recueil organisé et visuellement attractif des réalisations,
+                projets et compétences d'une personne. Il permet de présenter de
+                manière professionnelle son travail passé et ses capacités dans
+                le but de se démarquer dans son domaine d'expertise. C'est un
+                outil essentiel pour mettre en valeur les savoir-faire et leur
+                expérience.
               </div>
               <div class="icon">
                 <i class="bx bxl-github"></i>
@@ -115,15 +114,14 @@
               <div class="row">
                 <div class="techno">
                   <i class="bx bxl-angular"></i>
-                  <i class='bx bxl-typescript' ></i>
+                  <i class="bx bxl-typescript"></i>
                   <i class="bx bxl-sass"></i>
-                  <i class='bx bxl-nodejs' ></i>
+                  <i class="bx bxl-nodejs"></i>
                 </div>
                 <div class="date">Mai - Juin 2023</div>
               </div>
               <div class="name">Creadoc for school Classroom</div>
-              <div class="description">
-              </div>
+              <div class="description"></div>
               <div class="icon">
                 <i class="bx bx-link"></i>
               </div>
@@ -134,13 +132,10 @@
           <div class="cadre">
             <img src="assets\3.jpeg" />
             <div class="overlay-projet" id="overlay">
-              <div class="row">
-              </div>
+              <div class="row"></div>
               <div class="name">Coming Soon</div>
-              <div class="description">
-              </div>
-              <div class="icon">
-              </div>
+              <div class="description"></div>
+              <div class="icon"></div>
             </div>
           </div>
         </div>
@@ -148,13 +143,10 @@
           <div class="cadre">
             <img src="assets\4.jpeg" />
             <div class="overlay-projet" id="overlay">
-              <div class="row">
-              </div>
+              <div class="row"></div>
               <div class="name">Coming Soon</div>
-              <div class="description">
-              </div>
-              <div class="icon">
-              </div>
+              <div class="description"></div>
+              <div class="icon"></div>
             </div>
           </div>
         </div>
@@ -416,8 +408,13 @@
       </div>
     </div>
     <div class="svg">
-      <img src="assets\background.png" class="backcircuit"/>
+      <img src="assets\background.png" class="backcircuit" />
     </div>
-    <modal *ngIf="modal.portfolio.status" (onClose)="modal.portfolio.status = false" ></modal>
+    <modal
+      *ngIf="modal.portfolio.status"
+      (onClose)="modal.portfolio.status = false"
+    >
+      helloooooo it's me
+    </modal>
   </div>
 </div>
