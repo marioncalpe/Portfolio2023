@@ -22,4 +22,12 @@ export class AppComponent implements OnInit{
   off() {
     this.elementRef.nativeElement.querySelector("#overlay").style.display = "none";
   }
+
+  public modal = {
+    portfolio: { status: false },
+    classroom: { status: false },
+  };
+  openPortfolio():void{
+    this.modal.portfolio.status = true;
+  }
 }

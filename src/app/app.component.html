@@ -80,7 +80,7 @@
       <div class="title">Projet</div>
       <div class="content-projet">
         <div class="projet">
-          <div class="cadre" (click)="showModal = true">
+          <div class="cadre" (click)="openPortfolio()">
             <img src="assets\portfolio.png" />
             <div class="overlay-projet" id="overlay" >
               <div class="row">
@@ -418,6 +418,6 @@
     <div class="svg">
       <img src="assets\background.png" class="backcircuit"/>
     </div>
-    <modal [isVisible]="showModal" [ngStyle]="{'display': showModal ? 'block' : 'none'}" ></modal>
+    <modal *ngIf="modal.portfolio.status" (onClose)="modal.portfolio.status = false" ></modal>
   </div>
 </div>

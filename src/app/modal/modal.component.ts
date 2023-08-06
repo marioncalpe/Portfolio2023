@@ -1,4 +1,4 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
 
 @Component({
   templateUrl: './modal.component.html',
@@ -6,10 +6,9 @@ import { Component, HostListener, Input } from '@angular/core';
   selector: 'modal',
 })
 export class ModalComponent {
-  @Input() isVisible: boolean = false;
-
+  @Output() onClose: EventEmitter<null> = new EventEmitter();
   close() {
-    this.isVisible = false;
+    this.onClose.emit();
   }
   @HostListener('document:click', ['$event.target'])
   onClick(target: HTMLElement) {
