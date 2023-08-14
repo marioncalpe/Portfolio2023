@@ -324,19 +324,22 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           font-size: 50px;
           color: $background;
         }
-        img {
-          background: $gradien;
-          box-shadow: $textshadowgradien;
-          border-radius: 20px;
-          padding: 5px;
-        }
-        .bx-layout {
-          background: linear-gradient(135deg, #ffacd3 0.3%, #faeff7 99.68%);
-          box-shadow: $textshadowgradien;
-        }
+
         .bxl-sass {
           background: linear-gradient(135deg, #e9acff 0.3%, #ff4fce 99.68%);
           box-shadow: $textshadowgradien;
+          .sass {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .sass{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
         .bxl-angular {
           background: linear-gradient(
@@ -345,26 +348,99 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             #ff5050 99.75%
           );
           box-shadow: $textshadowgradien;
+          .angular {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .angular{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
         .bxl-typescript {
           background: linear-gradient(225deg, #b1b5ff 0.07%, #4260ff 99.79%);
           box-shadow: $textshadowgradien;
+          .typescript {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .typescript{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
+          
         }
         .bxs-coin-stack {
           background: linear-gradient(135deg, #e7a4ff -0.49%, #a532ff 100.13%);
           box-shadow: $textshadowgradien;
+          .mysql {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .mysql{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
         .bxl-javascript {
           background: linear-gradient(45deg, #ffcca8 0.21%, #fffa87 99.93%);
           box-shadow: $textshadowgradien;
+          .javascript {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .javascript{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
         .bxl-php {
           background: linear-gradient(225deg, #99daff 0.14%, #a966ff 99.86%);
           box-shadow: $textshadowgradien;
+          .php {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .php{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
         .bxl-git {
           background: linear-gradient(225deg, #ffd6bf 0.14%, #ff7272 99.86%);
           box-shadow: $textshadowgradien;
+          .git {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .git{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
         .bxl-github {
           background: linear-gradient(
@@ -374,10 +450,34 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             #ffe177
           );
           box-shadow: $textshadowgradien;
+          .github {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .github{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
         .bxl-gitlab {
           background: linear-gradient(225deg, #fff6a7, #ff6e41 99.71%);
           box-shadow: $textshadowgradien;
+          .gitlab {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .gitlab{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
         .bxl-trello {
           background: linear-gradient(
@@ -386,6 +486,18 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             #59a5ff 100.01%
           );
           box-shadow: $textshadowgradien;
+          .trello {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .trello{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
         .bxl-figma {
           background: linear-gradient(
@@ -394,69 +506,56 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             #5affce 100.08%
           );
           box-shadow: $textshadowgradien;
+          .figma {
+            display: none;
+            color: $white;
+            font-size: 24px;
+          }
+          &:hover{
+            .figma{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
-        .sass {
-          display: none;
-          color: $white;
-          font-size: 24px;
+        .bx-layout {
+          background: linear-gradient(135deg, #ffacd3 0.3%, #faeff7 99.68%);
+          box-shadow: $textshadowgradien;
+          .ux {
+            display: none;
+            color: $white;
+            font-size: 20px;
+          }
+          &:hover{
+            .ux{
+              display: flex;
+              color: $white;
+              font-size: 20px;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
-        .angular {
-          display: none;
-          color: $white;
-          font-size: 24px;
-        }
-        .typescript {
-          display: none;
-          color: $white;
-          font-size: 24px;
-        }
-        .mysql {
-          display: none;
-          color: $white;
-          font-size: 24px;
-        }
-        .javascript {
-          display: none;
-          color: $white;
-          font-size: 24px;
-        }
-        .php {
-          display: none;
-          color: $white;
-          font-size: 24px;
-        }
-        .git {
-          display: none;
-          color: $white;
-          font-size: 24px;
-        }
-        .github {
-          display: none;
-          color: $white;
-          font-size: 24px;
-        }
-        .trello {
-          display: none;
-          color: $white;
-          font-size: 24px;
-        }
-        .figma {
-          display: none;
-          color: $white;
-          font-size: 24px;
-        }
-        .ux {
-          display: none;
-          color: $white;
-          font-size: 24px;
-        }
-        .agile {
-          display: none;
-          color: $white;
-          font-size: 24px;
+        .image {
+          background: $gradien;
+          box-shadow: $textshadowgradien;
+          border-radius: 20px;
+          padding: 5px;
+          .agile {
+            display: none;
+            color: $white;
+            font-size: 20px;
+          }
+          &:hover{
+            .agile{
+              display: flex;
+              margin-bottom: -40px;
+              padding-top: 10px;
+            }
+          }
         }
       }
-
     }
     .exp {
       padding: 50px 0;
