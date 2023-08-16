@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-$background: #0a0a0a;
+$background: #000000;
 $white: #fff;
 $blue: #0b83b8;
 $red: #ff4385;
@@ -15,6 +15,27 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
   height: 100%;
   overflow: hidden;
   background-color: $background;
+
+    /* Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 255, 255) rgba(0, 0, 0, 0);
+  }
+
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
 
   .sidenav {
     display: flex;
@@ -92,7 +113,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     .svg {
       top: 0;
       position: absolute;
-      filter: blur(1px);
+      filter: blur(10px);
       z-index: -1;
       width: 90%;
       height: 100%;
