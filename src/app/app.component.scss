@@ -849,5 +849,35 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         }
       }
     }
+    modal{
+      .head{
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .titre{
+          color: $white;
+          font-size: 50px;
+        }
+        .technoprojet{
+          color: $white;
+          font-size: 30px;
+        }
+        .lienprojet{
+          color: $white;
+          font-size: 30px;
+        }
+      }
+      .description{
+        color: $white;
+        .miniTitle{
+          color: $white;
+          font-size: 30px;
+        }
+      }
+      
+    }
+    
   }
+
 }

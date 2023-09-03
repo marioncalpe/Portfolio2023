@@ -6,17 +6,19 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(95% - 10px);
     height: 100%;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
     z-index: 10;
+    margin-left: calc(5% + 10px);
   }
   
   /* Style pour le contenu du modal */
   .modal-content {
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
     padding: 20px;
     padding-top: 60px;
     border-radius: 4px;
