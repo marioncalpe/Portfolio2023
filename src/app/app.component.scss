@@ -264,9 +264,9 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           .cadre {
             height: 250px;
             width: 400px;
-            backdrop-filter: blur(7.5px);
+            backdrop-filter: blur(10px);
             box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
-            background: rgba(107, 107, 107, 0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             display: flex;
             justify-content: center;
