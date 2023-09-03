@@ -226,8 +226,13 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           }
         }
         .biosuite {
+          border-radius: 10px;
+          padding: 1em;
+          backdrop-filter: blur(7.5px);
+          box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
+          background: rgba(255, 255, 255, 0.1);
           font-family: $font-Segoe;
-          font-size: 14px;
+          font-size: 18px;
           color: $white;
           display: flex;
           align-items: center;
