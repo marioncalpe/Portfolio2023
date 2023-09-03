@@ -13,6 +13,10 @@
     backdrop-filter: blur(20px);
     z-index: 10;
     margin-left: calc(5% + 10px);
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+      width: 100%;
+    }
   }
   
   /* Style pour le contenu du modal */
@@ -44,6 +48,10 @@
     &:hover {
       color: #405574;
       background-color: #cccccc96;
+    }
+    @media screen and (max-width: 767px) {
+      width: 0%;
+      height: 0%;
     }
   }
   
