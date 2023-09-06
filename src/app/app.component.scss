@@ -182,7 +182,8 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         // transform: translateY(30px);
         @media screen and (max-width: 767px) {
           overflow: visible;
-          margin-top: 120px;
+          margin-top: 140px;
+          flex: none;
         }
         img {
           object-fit: cover;
