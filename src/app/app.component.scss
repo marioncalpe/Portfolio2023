@@ -664,7 +664,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       }
       .cd-timeline-img {
         // color under circle
-        background: $white;
+        background: $gradien;
       }
       @media only screen and (min-width: 1170px) {
         .cd-timeline-img {
@@ -783,7 +783,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       }
       @media only screen and (min-width: 1170px) {
         .cd-timeline-content {
-          color: white;
+          color: rgb(0, 0, 0);
           margin-left: 0;
           padding: 1.6em;
           width: 36%;
@@ -794,7 +794,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           top: 24px;
           left: 100%;
           border-color: transparent;
-          border-left-color: rgba(107, 107, 107, 0.1);
+          border-left-color: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(7.5px);
           box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
         }
@@ -814,7 +814,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           left: auto;
           right: 100%;
           border-color: transparent;
-          border-right-color: rgba(107, 107, 107, 0.1);
+          border-right-color: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(7.5px);
           box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
         }
