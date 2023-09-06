@@ -17,10 +17,10 @@
       <a href="#exp">
         <i class="bx bx-certification"></i>
       </a> -->
-      <!-- <a href="#contact">
+  <!-- <a href="#contact">
         <i class="bx bxs-send"></i>
       </a> -->
-    <!-- </div>
+  <!-- </div>
     <div class="text-certificat">© 2023 Marion Calpena.</div>
   </div> -->
   <div class="content">
@@ -34,7 +34,7 @@
       <div class="infos">
         <div class="bio">Bienvenue, je suis</div>
         <div class="name">Marion Calpena</div>
-        <div class="biosuite">
+        <div class="biosuiteDesktop">
           <p>
             👩‍💻 Développeuse Front-end Junior passionnée par la création et
             l'innovation ! Curieuse d'apprendre auprès des autres, je me suis
@@ -43,30 +43,60 @@
             agréables pour les utilisatreurs.
           </p>
 
-          <p>
-            J'ai également acquis des compétences en conception de maquettes en
-            autodidacte, ce qui me permet de donner vie à mes idées avec
-            créativité et originalité. En plus de ma passion pour le
-            développement, je suis une gameuse acharnée 🎮 et une mélomane
-            passionnée 🎵.
-          </p>
+            <p>
+              J'ai également acquis des compétences en conception de maquettes en
+              autodidacte, ce qui me permet de donner vie à mes idées avec
+              créativité et originalité. En plus de ma passion pour le
+              développement, je suis une gameuse acharnée 🎮 et une mélomane
+              passionnée 🎵.
+            </p>
 
-          <p>
-            J'aime explorer les liens entre le monde du jeu vidéo, de la musique
-            et le développement Front-end. Prête à relever de nouveaux défis et
-            à continuer à apprendre, je suis toujours à l'affût des dernières
-            tendances et technologies dans le domaine du Front-end. Contactez
-            moi pour créer ensemble des projets uniques et inspirants ! ✨
-          </p>
+            <p>
+              J'aime explorer les liens entre le monde du jeu vidéo, de la musique
+              et le développement Front-end. Prête à relever de nouveaux défis et
+              à continuer à apprendre, je suis toujours à l'affût des dernières
+              tendances et technologies dans le domaine du Front-end. Contactez
+              moi pour créer ensemble des projets uniques et inspirants ! ✨
+            </p>
         </div>
-        <div class="logo-social" >
+        <div class="biosuite">
+          <i class='bx bx-chevron-down' *ngIf="!isPanelOpen" (click)="togglePanel()" ></i>
+          <i class='bx bx-chevron-up' *ngIf="isPanelOpen" (click)="togglePanel()"></i>
+          <p>
+            👩‍💻 Développeuse Front-end Junior passionnée par la création et
+            l'innovation ! Curieuse d'apprendre auprès des autres, je me suis
+            formée en UX et UI pour concevoir des interfaces utilisatreurs
+            intuitives. Mon objectif est de créer des expériences fluides et
+            agréables pour les utilisatreurs.
+          </p>
+          <div *ngIf="isPanelOpen">
+            <p>
+              J'ai également acquis des compétences en conception de maquettes en
+              autodidacte, ce qui me permet de donner vie à mes idées avec
+              créativité et originalité. En plus de ma passion pour le
+              développement, je suis une gameuse acharnée 🎮 et une mélomane
+              passionnée 🎵.
+            </p>
+
+            <p>
+              J'aime explorer les liens entre le monde du jeu vidéo, de la musique
+              et le développement Front-end. Prête à relever de nouveaux défis et
+              à continuer à apprendre, je suis toujours à l'affût des dernières
+              tendances et technologies dans le domaine du Front-end. Contactez
+              moi pour créer ensemble des projets uniques et inspirants ! ✨
+            </p>
+          </div>
+        </div>
+        <div class="logo-social">
           <a target="_blank" class="contour" href="https://github.com/marioncalpe" matTooltip="github">
-            <div class="bx bxl-github" ></div>
+            <div class="bx bxl-github"></div>
           </a>
-          <a target="_blank" class="contour" href="https://www.linkedin.com/in/marion-calpena-90a930187" matTooltip="linkedin">
+          <a target="_blank" class="contour" href="https://www.linkedin.com/in/marion-calpena-90a930187"
+            matTooltip="linkedin">
             <div class="bx bxl-linkedin-square"></div>
           </a>
-          <a target="_blank" class="contour" href="https://discordapp.com/users/399935400921137164" matTooltip="discord">
+          <a target="_blank" class="contour" href="https://discordapp.com/users/399935400921137164"
+            matTooltip="discord">
             <div class="bx bxl-discord"></div>
           </a>
           <a class="contour" href="mailto:marioncalpe2a@gmail.com" matTooltip="gmail">
@@ -430,7 +460,7 @@
     <modal *ngIf="modal.portfolio.status" (onClose)="modal.portfolio.status = false">
       <div class="head">
 
-        
+
         <div class="titre">Portfolio</div>
         <div class="lienprojet">
           <i class="bx bxl-angular"></i>

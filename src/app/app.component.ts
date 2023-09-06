@@ -9,6 +9,11 @@ import 'boxicons';
 export class AppComponent implements OnInit{
   title = 'Portfolio';
   showModal: boolean = false;
+  isPanelOpen = false;
+
+  togglePanel() {
+    this.isPanelOpen = !this.isPanelOpen;
+  }
   ngOnInit() {
     this.showModal = false;
   }

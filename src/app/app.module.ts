@@ -7,6 +7,7 @@ import { MatInputModule } from '@angular/material/input'; // Import other necess
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { AppComponent } from './app.component';
 import { ModalComponent } from './modal/modal.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [AppComponent, ModalComponent],
@@ -17,7 +18,8 @@ import { ModalComponent } from './modal/modal.component';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule, // Add other necessary Angular Material modules to the 'imports' array.
-    MatTooltipModule
+    MatTooltipModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
