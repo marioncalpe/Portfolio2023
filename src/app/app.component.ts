@@ -30,10 +30,14 @@ export class AppComponent implements OnInit{
 
   public modal = {
     portfolio: { status: false },
-    classroom: { status: false },
+    classroom: { status: true },
   };
   openPortfolio(event:MouseEvent):void{
     event.stopPropagation();
     this.modal.portfolio.status = true;
+  }
+  openClassroom(event:MouseEvent):void{
+    event.stopPropagation();
+    this.modal.classroom.status = true;
   }
 }

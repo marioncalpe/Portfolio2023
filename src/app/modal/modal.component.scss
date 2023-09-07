@@ -1,57 +1,74 @@
 /* Style pour le fond sombre semi-transparent */
 .modal {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  z-index: 10;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(20px);
-    z-index: 10;
-    
-    @media screen and (max-width: 767px) {
-      margin-left: 0;
-      width: 100%;
-    }
   }
-  
-  /* Style pour le contenu du modal */
-  .modal-content {
-    background-color: rgb(0, 0, 0);
-    overflow: auto;
-    padding: 20px;
-    padding-top: 60px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
-    width: 100%;
-    height: 100%;
+}
+
+/* Style pour le contenu du modal */
+.modal-content {
+  background-color: rgb(0, 0, 0);
+  overflow: auto;
+  padding: 20px;
+  padding-top: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+/* Style pour le bouton de fermeture */
+.close-btn {
+  width: 1%;
+  height: 1%;
+  padding: 14px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 20px;
+  border-radius: 219px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: center;
+
+  &:hover {
+    color: #405574;
+    background-color: #cccccc96;
   }
-  
-  /* Style pour le bouton de fermeture */
-  .close-btn {
-    width: 0.5%;
-    height: 1%;
-    padding: 14px;
-    cursor: pointer;
-    color: #000000;
-    font-size: 20px;
-    border-radius: 219px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    align-self: flex-start;
-    justify-content: center;
-    &:hover {
-      color: #405574;
-      background-color: #cccccc96;
-    }
-    @media screen and (max-width: 767px) {
-      width: 0%;
-      height: 0%;
-    }
+
+  @media screen and (max-width: 767px) {
+    width: 0%;
+    height: 0%;
   }
-  
+}
+
+.date {
+  background-color: #323232;
+  color: #fff;
+  font-family: Rubik, sans-serif;
+  font-size: 20px;
+  opacity: 0.75;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+.modal-desc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

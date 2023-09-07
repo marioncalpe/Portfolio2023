@@ -121,14 +121,14 @@
                 <div class="date">Août 2023</div>
               </div>
               <div class="name">Portfolio</div>
-              <div class="description">
+              <!-- <div class="description">
                 Un recueil organisé et visuellement attractif des réalisations,
                 projets et compétences d'une personne. Il permet de présenter de
                 manière professionnelle son travail passé et ses capacités dans
                 le but de se démarquer dans son domaine d'expertise. C'est un
                 outil essentiel pour mettre en valeur les savoir-faire et leur
                 expérience.
-              </div>
+              </div> -->
               <div class="icon">
                 <i class="bx bxl-github"></i>
                 <i class="bx bxl-figma"></i>
@@ -138,7 +138,7 @@
           </div>
         </div>
         <div class="projet">
-          <div class="cadre">
+          <div class="cadre" (click)="openClassroom($event)">
             <img src="assets\classroom.png" />
             <div class="overlay-projet" id="overlay">
               <div class="row">
@@ -150,8 +150,8 @@
                 </div>
                 <div class="date">Mai - Juin 2023</div>
               </div>
-              <div class="name">Creadoc for school Classroom</div>
-              <div class="description"></div>
+              <div class="name">Creadoc Classroom</div>
+              <!-- <div class="description"></div> -->
               <div class="icon">
                 <i class="bx bx-link"></i>
               </div>
@@ -164,7 +164,7 @@
             <div class="overlay-projet" id="overlay">
               <div class="row"></div>
               <div class="name">Coming Soon</div>
-              <div class="description"></div>
+              <!-- <div class="description"></div> -->
               <div class="icon"></div>
             </div>
           </div>
@@ -175,7 +175,7 @@
             <div class="overlay-projet" id="overlay">
               <div class="row"></div>
               <div class="name">Coming Soon</div>
-              <div class="description"></div>
+              <!-- <div class="description"></div> -->
               <div class="icon"></div>
             </div>
           </div>
@@ -571,6 +571,19 @@
         </ul>
       </div>
 
+    </modal>
+    <modal *ngIf="modal.classroom.status" (onClose)="modal.classroom.status = false">
+      <div class="head">
+        <div class="titre">Creadoc Classroom</div>
+        <div class="lienprojet">
+          <i class="bx bxl-angular"></i>
+          <i class="bx bxl-typescript"></i>
+          <i class="bx bxl-sass"></i>
+          <i class="bx bxl-nodejs"></i>
+          <i class="bx bx-link"></i>
+        </div>
+      </div>
+      <div class="description"></div>
     </modal>
   </div>
 </div>
