@@ -953,8 +953,11 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           line-height: 85px;
           text-shadow: $textshadowgradien;
           letter-spacing: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
           @media screen and (max-width: 767px) {
-            font-size: 30px;
+            font-size: 40px;
           }
         }
         .technoprojet{
@@ -984,6 +987,9 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
         background: rgba(255, 255, 255, 0.1);
         border-radius: 20px;
+        @media screen and (max-width: 767px) {
+          margin: 20px 20px;
+        }
       }
       .miniTitle{
         color: $white;
@@ -998,7 +1004,24 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         color: $white;
         display: flex;
         flex-direction: row;
-        
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+        }
+        ul{
+          font-size: 20px;
+          padding: 0 45px;
+          margin: 50px 200px;
+          backdrop-filter: blur(10px);
+          box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 20px;
+          @media screen and (max-width: 767px) {
+            margin: 50px 50px;
+          }
+        }
+        li{
+          padding: 10px 0;
+        }
         .CDA{
           font-size: 20px;
           ul{
@@ -1007,6 +1030,9 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
             background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
+            @media screen and (max-width: 767px) {
+              margin: 20px 20px;
+            }
           }
           li{
             padding: 10px 0;
@@ -1022,6 +1048,9 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         display: flex;
         flex-direction: row;
         padding-bottom: 30px;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+        }
       }
       .enseignant, .student{
         display: flex;
@@ -1030,6 +1059,9 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         justify-content: space-evenly;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+        }
       }
       .student{
         gap: 10px
@@ -1037,6 +1069,9 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       .desktopgif{
         width: 700px;
         display: flex;
+        @media screen and (max-width: 767px) {
+          width: 400px;
+        }
       }
       .mobilegif{
         height: 400px;
