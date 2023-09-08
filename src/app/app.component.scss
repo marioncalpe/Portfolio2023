@@ -933,7 +933,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     }
     modal{
       .head{
-        padding: 50px;
+        padding-bottom: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -943,40 +943,104 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           padding: 20px;
         }
         .titre{
-          color: $white;
-          font-size: 50px;
+          font-size: 70px;
+          padding: 10px;
+          background: $gradien;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-family: $font-Pacifico;
+          line-height: 85px;
+          text-shadow: $textshadowgradien;
+          letter-spacing: 0;
           @media screen and (max-width: 767px) {
             font-size: 30px;
           }
         }
         .technoprojet{
           color: $white;
-          font-size: 30px;
+          font-size: 50px;
           @media screen and (max-width: 767px) {
             display: flex;
-        flex-direction: row;
+            flex-direction: row;
           }
         }
         .lienprojet{
           color: $white;
-          font-size: 30px;
+          font-size: 40px;
           @media screen and (max-width: 767px) {
             display: flex;
             flex-direction: row;
           }
         }
       }
-      .description{
+      .pres{
         color: $white;
-        .miniTitle{
-          color: $white;
-          font-size: 30px;
-          @media screen and (max-width: 767px) {
-            font-size: 20px;
-          }
+        font-size: 20px;
+        padding: 10px;
+        margin: 0px 200px;
+        margin-bottom: 50px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+      }
+      .miniTitle{
+        color: $white;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 767px) {
+          font-size: 20px;
         }
       }
-      
+      .description{
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        
+        .CDA{
+          font-size: 20px;
+          ul{
+            margin: 50px 200px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+          }
+          li{
+            padding: 10px 0;
+          }
+        }
+        .textglobal{
+          font-size: 18px;
+        }
+        
+        
+      }
+      .illustration{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 30px;
+      }
+      .enseignant, .student{
+        display: flex;
+        padding: 20px 0;
+        gap: 30px;
+        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+      }
+      .student{
+        gap: 10px
+      }
+      .desktopgif{
+        width: 700px;
+        display: flex;
+      }
+      .mobilegif{
+        height: 400px;
+      }
     }
     
   }

@@ -43,24 +43,24 @@
             agréables pour les utilisatreurs.
           </p>
 
-            <p>
-              J'ai également acquis des compétences en conception de maquettes en
-              autodidacte, ce qui me permet de donner vie à mes idées avec
-              créativité et originalité. En plus de ma passion pour le
-              développement, je suis une gameuse acharnée 🎮 et une mélomane
-              passionnée 🎵.
-            </p>
+          <p>
+            J'ai également acquis des compétences en conception de maquettes en
+            autodidacte, ce qui me permet de donner vie à mes idées avec
+            créativité et originalité. En plus de ma passion pour le
+            développement, je suis une gameuse acharnée 🎮 et une mélomane
+            passionnée 🎵.
+          </p>
 
-            <p>
-              J'aime explorer les liens entre le monde du jeu vidéo, de la musique
-              et le développement Front-end. Prête à relever de nouveaux défis et
-              à continuer à apprendre, je suis toujours à l'affût des dernières
-              tendances et technologies dans le domaine du Front-end. Contactez
-              moi pour créer ensemble des projets uniques et inspirants ! ✨
-            </p>
+          <p>
+            J'aime explorer les liens entre le monde du jeu vidéo, de la musique
+            et le développement Front-end. Prête à relever de nouveaux défis et
+            à continuer à apprendre, je suis toujours à l'affût des dernières
+            tendances et technologies dans le domaine du Front-end. Contactez
+            moi pour créer ensemble des projets uniques et inspirants ! ✨
+          </p>
         </div>
         <div class="biosuite">
-          <i class='bx bx-chevron-down' *ngIf="!isPanelOpen" (click)="togglePanel()" ></i>
+          <i class='bx bx-chevron-down' *ngIf="!isPanelOpen" (click)="togglePanel()"></i>
           <i class='bx bx-chevron-up' *ngIf="isPanelOpen" (click)="togglePanel()"></i>
           <p>
             👩‍💻 Développeuse Front-end Junior passionnée par la création et
@@ -459,8 +459,6 @@
     </div>
     <modal *ngIf="modal.portfolio.status" (onClose)="modal.portfolio.status = false">
       <div class="head">
-
-
         <div class="titre">Portfolio</div>
         <div class="lienprojet">
           <i class="bx bxl-angular"></i>
@@ -475,99 +473,31 @@
 
         <div class="miniTitle"> Pourquoi faire un portfolio ?</div>
         <ul>
-          <li><b>Mettre en valeur vos compétences techniques :</b> Votre portfolio est une vitrine de votre travail et
-            de vos
-            compétences en développement. Il permet aux employeurs potentiels de voir concrètement ce que vous savez
-            faire.
-            En montrant vos projets passés, vous démontrez votre expertise et votre capacité à résoudre des problèmes.
+          <li>Mettre en valeur vos compétences techniques
           </li>
-          <li><b>Démontrer votre expérience :</b> Un portfolio bien conçu peut détailler vos projets précédents, y
-            compris les
-            technologies utilisées, les défis rencontrés et les résultats obtenus. Cela permet de montrer que vous avez
-            de
-            l'expérience dans la réalisation de projets concrets.</li>
-          <li><b>Se démarquer de la concurrence :</b> Dans un marché de plus en plus compétitif, un portfolio bien
-            construit peut
-            vous démarquer des autres candidats. Il montre que vous êtes sérieux au sujet de votre carrière de
-            développeur
-            et que vous avez pris le temps de mettre en valeur vos réalisations.</li>
-          <li><b>Favoriser la discussion lors des entretiens :</b> Votre portfolio peut servir de point de départ pour
-            des
-            discussions lors d'entretiens d'embauche. Les employeurs peuvent poser des questions sur des projets
-            spécifiques
-            que vous avez réalisés, ce qui peut vous donner l'occasion de mettre en avant vos compétences et votre
-            expérience.</li>
-          <li><b>Élargir votre réseau professionnel :</b> En partageant votre portfolio en ligne, vous pouvez attirer
-            l'attention
-            de recruteurs et d'autres professionnels de l'industrie. Cela peut vous ouvrir des opportunités de
-            réseautage et
-            de collaboration.</li>
-          <li><b>Évoluer professionnellement :</b> Un portfolio peut également vous aider à tracer votre propre chemin
-            professionnel. En réfléchissant à vos projets passés et en planifiant ceux à venir, vous pouvez mieux
-            comprendre
-            vos intérêts et vos objectifs en tant que développeur.</li>
-          <li><b>Établir votre crédibilité en tant qu'indépendant :</b> Si vous envisagez de travailler en freelance ou
-            de proposer
-            vos services en tant que consultant, un portfolio solide est essentiel pour convaincre les clients
-            potentiels de
-            vos compétences et de votre expérience.</li>
-          <li><b>Suivre votre progression :</b> En conservant une trace de vos projets passés dans votre portfolio, vous
-            pouvez
-            suivre votre propre progression en tant que développeur. Cela peut vous aider à identifier les domaines dans
-            lesquels vous avez progressé et ceux qui nécessitent encore du travail.</li>
-          <li><b>Prendre confiance en vous :</b> Rassembler et présenter vos réalisations de manière professionnelle
-            peut vous
-            aider à renforcer votre confiance en vous en tant que développeur. Cela peut également vous donner un
-            sentiment
-            d'accomplissement et de fierté pour votre travail.</li>
+          <li>Démontrer votre expérience</li>
+          <li>Se démarquer de la concurrence</li>
+          <li>Favoriser la discussion lors des entretiens</li>
+          <li>Élargir votre réseau professionnel</li>
+          <li>Évoluer professionnellement</li>
+          <li>Établir votre crédibilité en tant qu'indépendant</li>
+          <li>Suivre votre progression</li>
+          <li>Prendre confiance en vous</li>
         </ul>
 
         <div class="miniTitle"> Pourquoi utiliser Angular ?</div>
         <ul>
-          <li><b>Structure solide et modulaire :</b> Angular encourage une structure de projet modulaire et bien
-            organisée. Il
-            utilise le concept de composants, ce qui facilite la division de l'application en parties réutilisables,
-            améliorant ainsi la maintenabilité et la collaboration.</li>
-          <li><b>TypeScript :</b> Angular est basé sur TypeScript, un super-ensemble de JavaScript qui ajoute des
-            fonctionnalités de
-            typage statique. Cela permet de détecter les erreurs de manière précoce, d'améliorer la productivité et de
-            rendre le code plus sûr.</li>
-          <li><b>De nombreux outils et bibliothèques :</b> Angular est livré avec un ensemble complet d'outils,
-            notamment le système
-            de gestion des états (NgRx), Angular CLI pour la génération de code, et une vaste bibliothèque de composants
-            prêts à l'emploi.</li>
-          <li><b>Performance optimisée :</b> Angular utilise le concept de détection des changements (change detection)
-            pour
-            optimiser les mises à jour de l'interface utilisateur. Il offre également des fonctionnalités telles que le
-            chargement asynchrone des modules pour améliorer les performances de l'application.</li>
-          <li><b>Gestion de l'état robuste :</b> Grâce à des bibliothèques comme NgRx, Angular propose des solutions
-            robustes pour
-            gérer l'état de l'application, ce qui facilite la gestion des données et la synchronisation entre les
-            composants.</li>
-          <li><b>Réactivité et temps réel :</b> Angular est bien adapté pour la création d'applications en temps réel,
-            notamment
-            grâce à l'utilisation de WebSockets et à l'intégration facile de bibliothèques de gestion de flux comme
-            RxJS.</li>
-          <li><b>Support de Google :</b> Angular est développé et maintenu par Google, ce qui signifie qu'il bénéficie
-            d'une solide
-            communauté de développeurs et de mises à jour régulières pour rester à jour avec les dernières avancées
-            technologiques.</li>
-          <li><b>Sécurité :</b> Angular prend en charge la sécurité au niveau de l'application en encourageant les
-            bonnes pratiques,
-            telles que l'évitement des attaques XSS (Cross-Site Scripting) et la protection contre les failles de
-            sécurité
-            courantes.</li>
-          <li><b>Intégration facile :</b> Angular peut être intégré à d'autres bibliothèques et frameworks JavaScript,
-            ce qui le rend
-            compatible avec une grande variété de technologies existantes.</li>
-          <li><b>Documentation complète :</b> Angular dispose d'une documentation complète et détaillée, ainsi que de
-            nombreux
-            tutoriels et ressources en ligne pour aider les développeurs à apprendre et à résoudre des problèmes.</li>
-          <li><b>Large écosystème de développeurs :</b> Grâce à sa popularité et au soutien de Google, Angular a une
-            grande
-            communauté de développeurs et d'entreprises qui l'utilisent, ce qui signifie que vous pourrez trouver
-            facilement
-            de l'aide en cas de besoin.</li>
+          <li>Structure solide et modulaire</li>
+          <li>TypeScript</li>
+          <li>De nombreux outils et bibliothèques</li>
+          <li>Performance optimisée</li>
+          <li>Gestion de l'état robuste</li>
+          <li>Réactivité et temps réel</li>
+          <li>Support de Google</li>
+          <li>Sécurité.</li>
+          <li>Intégration facile</li>
+          <li>Documentation complète</li>
+          <li>Large écosystème de développeurs</li>
         </ul>
       </div>
 
@@ -583,7 +513,54 @@
           <i class="bx bx-link"></i>
         </div>
       </div>
-      <div class="description"></div>
+      <div class="pres">
+        Classroom est une composante de Creadoc for School. Cette fonctionnalité permet aux enseignants d'intégrer des
+        documents et des fiches qu'ils souhaitent partager avec leurs étudiants. Cependant, la principale limitation
+        de cette version 1 est que les fiches interactives ne sont accessibles qu'avec un code d'authentification
+        spécifique à chaque enseignant. Cela s'avère très pratique pour des exercices en classe, que ce soit au
+        tableau ou sur un tableau interactif. Cependant, cette version ne permet pas aux enseignants de créer des
+        devoirs interactifs et d'évaluer individuellement les élèves.<br>
+      </div>
+      <div class="description">
+        <div class="CDA">
+          <b class="miniTitle">Le cahier des charges :</b>
+          <ul>
+            <li>Maintenir le code "class" pour référencer le bon enseignant tout en introduisant un code personnel
+              unique pour chaque enseignant et ses élèves.</li>
+            <li>Créer deux interfaces distinctes, une pour les enseignants et une pour les étudiants.</li>
+            <li>
+              Pour l'interface enseignants, permettre la création de groupes ou de classes personnalisés avec la
+              possibilité de sélectionner les élèves.
+            </li>
+            <li>
+              Offrir la capacité de créer différentes sections au sein de ces groupes pour organiser les documents en
+              fonction des besoins.
+            </li>
+            <li>Permettre aux enseignants de visualiser le score de chaque élève sur chaque document, afin de savoir si
+              le devoir a été complété, d'afficher la note attribuée, ainsi que les points à corriger.</li>
+            <li>Permettre aux enseignants de visualiser individuellement chaque élève, en accédant à leurs classes ou
+              groupes, aux documents qu'ils ont réalisés et aux devoirs assignés, avec les scores correspondants.</li>
+            <li>Pour l'interface étudiant, permettre l'accès aux classes ou groupes auxquels ils ont été assignés, ainsi
+              que la visualisation des documents à réaliser ou déjà complétés, avec un score global affiché.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="illustration">
+        <div>
+          <b class="miniTitle"> Interface enseignant</b>
+          <div class="enseignant">
+            <img class="desktopgif" src="assets\DesktopEnseignantClassroom.gif">
+            <img class="mobilegif" src="assets\MobileEnseignantClassroom.gif">
+          </div>
+        </div>
+        <div>
+          <b class="miniTitle"> Interface étudiante</b>
+          <div class="student">
+            <img class="desktopgif" src="assets\DesktopStudentClassroom.gif">
+            <img class="mobilegif" src="assets\MobileStudentClassroom.gif">
+          </div>
+        </div>
+      </div>
     </modal>
   </div>
 </div>
