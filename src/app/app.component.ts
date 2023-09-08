@@ -29,7 +29,7 @@ export class AppComponent implements OnInit{
   }
 
   public modal = {
-    portfolio: { status: true },
+    portfolio: { status: false },
     classroom: { status: false },
   };
   openPortfolio(event:MouseEvent):void{
