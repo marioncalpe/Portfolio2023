@@ -1048,6 +1048,8 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         display: flex;
         flex-direction: row;
         padding-bottom: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
         @media screen and (max-width: 767px) {
           flex-direction: column;
         }
