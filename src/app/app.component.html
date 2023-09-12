@@ -439,7 +439,7 @@
     <div class="svg">
       <img src="assets\background2.png" class="backcircuit" />
     </div>
-    <modal *ngIf="modal.portfolio.status" (onClose)="modal.portfolio.status = false">
+    <!-- <modal *ngIf="modal.portfolio.status" (onClose)="modal.portfolio.status = false">
       <div class="head">
         <div class="titre">Portfolio</div>
         <div class="lienprojet">
@@ -487,7 +487,7 @@
         
       </div>
 
-    </modal>
+    </modal> -->
     <modal *ngIf="modal.classroom.status" (onClose)="modal.classroom.status = false">
       <div class="head">
         <div class="titre">Classroom</div>
@@ -497,24 +497,24 @@
           <i class="bx bxl-sass" matTooltip="sass"></i>
           <i class="bx bxl-nodejs" matTooltip="nodejs"></i>
           <a href="https://www.creadocforschool.com/fr/" target="_blank">
-            <i class="bx bx-link" matTooltip="creadoc" ></i>
+            <i class="bx bx-link" matTooltip="creadoc"></i>
           </a>
-          
+
         </div>
       </div>
       <div class="pres">
-        Classroom est une composante de Creadoc for School. Cette fonctionnalité permet aux enseignants d'intégrer des
-        documents et des fiches qu'ils souhaitent partager avec leurs étudiants. Cependant, la principale limitation
-        de cette version 1 est que les fiches interactives ne sont accessibles qu'avec un code d'authentification
-        spécifique à chaque enseignant. Cela s'avère très pratique pour des exercices en classe, que ce soit au
-        tableau ou sur un tableau interactif. Cependant, cette version ne permet pas aux enseignants de créer des
-        devoirs interactifs et d'évaluer individuellement les élèves.<br>
+        La fonctionnalité Classroom de Creadoc for School permet aux enseignants d'intégrer des documents et des fiches
+        qu'ils souhaitent partager avec leurs étudiants. Toutefois, dans cette première version, les fiches interactives
+        ne sont accessibles qu'avec un code d'authentification spécifique à chaque enseignant. Cette approche s'avère
+        très pratique pour les exercices en classe, que ce soit au tableau ou sur un tableau interactif. Cependant,
+        cette version ne permet pas encore aux enseignants de créer des devoirs interactifs ni d'évaluer
+        individuellement les élèves.<br>
       </div>
       <div class="description">
         <div class="CDA">
           <b class="miniTitle">Le cahier des charges :</b>
           <ul>
-            <li>Maintenir le code "class" pour référencer le bon enseignant tout en introduisant un code personnel
+            <li>Maintenir le code "class" (code d'authentification) pour référencer le bon enseignant tout en introduisant un code personnel
               unique pour chaque enseignant et ses élèves.</li>
             <li>Créer deux interfaces distinctes, une pour les enseignants et une pour les étudiants.</li>
             <li>
