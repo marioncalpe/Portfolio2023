@@ -626,7 +626,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
 
       .cd-timeline-block {
         position: relative;
-        margin: 2em 0;
+        margin: 3em 0;
       }
       .cd-timeline-block:after {
         content: "";
@@ -769,7 +769,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       @media only screen and (min-width: 768px) {
         .cd-timeline-content h2 {
           font-size: 20px;
-          font-size: 1.25rem;
+          font-size: 1.50rem;
         }
         .cd-timeline-content p {
           font-size: 16px;
@@ -786,8 +786,8 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           color: rgb(0, 0, 0);
           margin-left: 0;
           padding: 1.6em;
-          width: 36%;
-          margin: 0 5%;
+          width: 45%;
+          margin: 0 -5%;
         }
         .cd-timeline-content::before {
           // triangle left
@@ -803,7 +803,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           width: 100%;
           left: 122%;
           top: 6px;
-          font-size: 16px;
+          font-size: 18px;
           font-size: 1rem;
         }
         .cd-timeline-block:nth-child(even) .cd-timeline-content {
