@@ -944,7 +944,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         }
         .titre{
           font-size: 70px;
-          padding: 10px;
+          padding: 20px;
           background: $gradien;
           -webkit-background-clip: text;
           background-clip: text;
@@ -1081,5 +1081,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     }
     
   }
-
+.monifyimg{
+  padding: 30px;
+}
 }

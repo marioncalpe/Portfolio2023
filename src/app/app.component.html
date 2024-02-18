@@ -130,8 +130,8 @@
           </div>
         </div>
         <div class="projet">
-          <div class="cadre" (click)="openClassroom($event)">
-            <img src="assets\monify.png"/>
+          <div class="cadre" (click)="openMonify($event)">
+            <img class="monifyimg" src="assets\monify.png"/>
             <div class="overlay-projet" id="overlay">
               <div class="row">
                 <div class="techno-cadre">
@@ -584,6 +584,63 @@
             <img class="desktopgif" src="assets\DesktopStudentClassroom.gif">
             <img class="mobilegif" src="assets\MobileStudentClassroom.gif">
           </div>
+        </div>
+      </div>
+    </modal>
+    <modal *ngIf="modal.monify.status" (onClose)="modal.monify.status = false">
+      <div class="head">
+        <div class="titre">Monify V.1</div>
+        <div class="lienprojet">
+          <i class="bx bxl-angular" matTooltip="angular"></i>
+          <i class="bx bxl-typescript" matTooltip="typescript"></i>
+          <i class="bx bxl-sass" matTooltip="sass"></i>
+          <i class="bx bxl-nodejs" matTooltip="nodejs"></i>
+          <a href="https://www.creadocforschool.com/fr/" target="_blank">
+            <i class="bx bxl-github" matTooltip="github"></i>
+          </a>
+
+        </div>
+      </div>
+      <div class="pres">
+        Monify est un projet qui part d'un problèmatique simple. En commançant en tant que auto-entrepreneur, j'ai du faire plusieurs
+        calcul pour savoir se que je devais a l'organisme de l'URSSAF et se que je pouvais me verser comme salaire. Aucuns sites
+        ou application pouvais convenir a mes attentes. J'ai donc pris la décision de faire une application qui me convienne. Avec 
+        Gwenaël Guiraud, un ami developpeur Back-end, nous avons fait Monify V.1<br>
+      </div>
+      <div class="description">
+        <div class="CDA">
+          <b class="miniTitle">Le cahier des charges :</b>
+          <ul>
+            <li>Avoir un mini formulaire avec comme entrées : un nom, une date, le montant reçus, le taux de prestation, le taux d'impot sur le revenue et le taux de formation profession libéral</li>
+            <li>Avoir une visialisation par mois, avec des totaux, pour pouvoir rentrer ces revenu du mois sur le site de l'URSSAF</li>
+            <li>
+              Avoir une visialisation de totaux, en graphique
+            </li>
+            <li>
+              Une mise en place de login, pour un sécurité, et un potentiel, mise en ligne pour d'autre utilisateur
+            </li>
+            <li>Un menu avec des paramêtre, et un déconnexion</li>
+            <li>Dans les paramêtre, un menu de changement de mot de passe</li>
+          </ul>
+        </div>
+      </div>
+      <div class="illustration">
+        <div>
+          <b class="miniTitle"> Interface Version 1</b>
+          <div class="enseignant">
+            <img class="desktopgif" src="assets\monify1.gif">
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <div class="CDA">
+          <b class="miniTitle">Prochaine update :</b>
+          <ul>
+            <li>Faire un version mobile</li>
+            <li>Faire une interface, pour la création de facture </li>
+            <li>Faire une interface, pour la gestion de compte, de type épargne</li>
+            <li>Ajout une fonctionnalité pour permettre aux utilisateurs d'apporter un retour sur l'application</li>
+          </ul>
         </div>
       </div>
     </modal>
