@@ -524,7 +524,7 @@
       </div>
 
     </modal> -->
-    <modal *ngIf="modal.classroom.status" (onClose)="modal.classroom.status = false">
+    <modal [date]="'Mai - Juillet 2023'"  *ngIf="modal.classroom.status" (onClose)="modal.classroom.status = false">
       <div class="head">
         <div class="titre">Classroom</div>
         <div class="lienprojet">
@@ -587,7 +587,7 @@
         </div>
       </div>
     </modal>
-    <modal *ngIf="modal.monify.status" (onClose)="modal.monify.status = false">
+    <modal [date]="'Novembre - Décembre 2023'" *ngIf="modal.monify.status" (onClose)="modal.monify.status = false">
       <div class="head">
         <div class="titre">Monify V.1</div>
         <div class="lienprojet">

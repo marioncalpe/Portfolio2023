@@ -6,10 +6,13 @@ import { Component, EventEmitter, HostListener, Input, Output } from '@angular/c
   selector: 'modal',
 })
 export class ModalComponent {
+  @Input() date: string =''; // Propriété d'entrée pour la date
   @Output() onClose: EventEmitter<null> = new EventEmitter();
+
   close() {
     this.onClose.emit();
   }
+
   @HostListener('document:click', ['$event.target'])
   onClick(target: HTMLElement) {
     // Vérifier si l'élément cliqué est à l'intérieur de la modal

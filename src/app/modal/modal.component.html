@@ -1,8 +1,8 @@
-<div class="modal" >
+<div class="modal">
   <div class="modal-content" #modalContent>
     <div class="modal-desc">
       <div class="close-btn" (click)="close()">&times;</div>
-      <div class="date"> Mai - Juillet 2023</div>
+      <div class="date">{{ date }}</div> <!-- Utilisation de la propriété date -->
     </div>
     <ng-content></ng-content>
   </div>
