@@ -25,7 +25,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
   flex-direction: row;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   background-color: $background;
 
     /* Works on Firefox */
@@ -118,12 +118,31 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     width: 100%;
     height: 100%;
     overflow: auto;
-    padding: 20px 0 20px 20px;
-    z-index: 1;
+    padding: 0px 20px 0px 20px;
+    z-index: 0;
     
+    // .scroll-to-top {
+    //   position: fixed;
+    //   bottom: 15px;
+    //   right: 15px;
+    //   opacity: 0;
+    //   transition: all .2s ease-in-out;
+    // }
+    // .btntotop {
+    //   border-radius: 50%;
+    //   border-color: transparent;
+    //   background-color: #911ED7;
+    //   padding: 5px 7px;
+    //   cursor: pointer;
+    // }
     
+    // .show-scrollTop {
+    //   opacity: 1;
+    //   transition: all .2s ease-in-out;
+    // }
     .m-red {
       position:relative;
+      padding-top: 20px;
       background: $gradien;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -140,7 +159,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       top: 0;
       position: absolute;
       filter: blur(0px);
-      z-index: -1;
+      z-index: -50;
       width: 90%;
       height: 100%;
       overflow: hidden;
@@ -1079,9 +1098,45 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         height: 400px;
       }
     }
-    
+    .footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2;
+      color: white;
+      font-size: 45px;
+      .text{
+        font-family: $font-Pacifico;
+        padding-bottom: 30px;
+      }
+      .gif{
+        height: 100px;
+      }
+      .logo-social {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 20px;
+        .contour {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 5px;
+          padding: 5px;
+          border-radius: 25px;
+          background: linear-gradient(45deg, #9edbff, #b3a0ff 50%, #f29dff);
+          cursor: pointer;
+          text-decoration: none;
+          .bx {
+            color: $background;
+            font-size: 28px;
+            padding: 5px;
+          }
+        }
+      }
+    }
   }
 .monifyimg{
   padding: 30px;
 }
+
 }
