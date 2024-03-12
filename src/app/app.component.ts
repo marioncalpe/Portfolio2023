@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
   title = 'Portfolio';
   showModal: boolean = false;
   isPanelOpen = false;
+  currentYear: number = new Date().getFullYear();
   form: FormGroup = new FormGroup({
     from_name: new FormControl(""),
     to_name: new FormControl(""),
