@@ -1,17 +1,45 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, ElementRef, HostListener, Inject, OnInit } from '@angular/core';
-
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  Inject,
+  OnInit,
+} from '@angular/core';
+import emailjs from '@emailjs/browser';
 import 'boxicons';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   // windowScrolled!: boolean;
   title = 'Portfolio';
   showModal: boolean = false;
   isPanelOpen = false;
+  form: FormGroup = new FormGroup({
+    from_name: new FormControl(""),
+    to_name: new FormControl(""),
+    from_email: new FormControl(""),
+    subject: new FormControl(""),
+    message: new FormControl("")
+  });
+
+  async send() {
+    emailjs.init('QMCtu6ZSfXPvxrtxQ');
+    let response = await emailjs.send('service_2ur1gzn', 'template_s51fabs', {
+      from_name: this.form.value.from_name,
+      to_name: this.form.value.to_name,
+      from_email: this.form.value.from_email,
+      subject: this.form.value.subject,
+      message: this.form.value.message,
+    });
+
+    alert('Message has been sent');
+    this.form.reset();
+  }
 
   togglePanel() {
     this.isPanelOpen = !this.isPanelOpen;
@@ -20,55 +48,32 @@ export class AppComponent implements OnInit{
     this.showModal = false;
   }
 
-  constructor(private elementRef: ElementRef, @Inject(DOCUMENT) private document: Document) {}
+  constructor(
+    private elementRef: ElementRef,
+    @Inject(DOCUMENT) private document: Document,
+    private fb: FormBuilder
+  ) {}
 
   on() {
-    this.elementRef.nativeElement.querySelector("#overlay").style.display = "block";
+    this.elementRef.nativeElement.querySelector('#overlay').style.display =
+      'block';
   }
 
   off() {
-    this.elementRef.nativeElement.querySelector("#overlay").style.display = "none";
+    this.elementRef.nativeElement.querySelector('#overlay').style.display =
+      'none';
   }
 
   public modal = {
     monify: { status: false },
     classroom: { status: false },
   };
-  openMonify(event:MouseEvent):void{
+  openMonify(event: MouseEvent): void {
     event.stopPropagation();
     this.modal.monify.status = true;
   }
-  openClassroom(event:MouseEvent):void{
+  openClassroom(event: MouseEvent): void {
     event.stopPropagation();
     this.modal.classroom.status = true;
   }
-
-  // @HostListener('window:scroll', [])
-  // onWindowScroll() {
-  //   if (
-  //     window.scrollY ||
-  //     document.documentElement.scrollTop ||
-  //     document.body.scrollTop > 100
-  //   ) {
-  //     this.windowScrolled = true;
-  //   } else if (
-  //     (this.windowScrolled && window.scrollY) ||
-  //     document.documentElement.scrollTop ||
-  //     document.body.scrollTop < 10
-  //   ) {
-  //     this.windowScrolled = false;
-  //   }
-  // }
-
-  // scrollToTop() {
-  //   (function smoothscroll() {
-  //     let currentScroll =
-  //       document.documentElement.scrollTop || document.body.scrollTop;
-
-  //     if (currentScroll > 0) {
-  //       window.requestAnimationFrame(smoothscroll);
-  //       window.scrollTo(0, currentScroll - currentScroll / 8);
-  //     }
-  //   })();
-  // }
 }

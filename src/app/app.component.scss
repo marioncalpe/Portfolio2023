@@ -1103,8 +1103,9 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       flex-direction: column;
       align-items: center;
       z-index: 2;
-      color: white;
+      color: black;
       font-size: 45px;
+      background-color: white;
       .text{
         font-family: $font-Pacifico;
         padding-bottom: 30px;

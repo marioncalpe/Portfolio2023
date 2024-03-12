@@ -427,8 +427,7 @@
       </button>
     </div> -->
     <div class="footer">
-      
-      <div class="text"> - Contactez moi - </div>
+      <!-- <div class="text"> - Contactez moi - </div>
       <div class="logo-social">
         <a target="_blank" class="contour" href="https://github.com/marioncalpe" matTooltip="github">
           <div class="bx bxl-github"></div>
@@ -443,155 +442,167 @@
         </a>
         <a class="contour" href="mailto:marioncalpe2a@gmail.com" matTooltip="gmail">
           <div class="bx bxl-gmail"></div>
-        </a>
-      </div>
-      <!-- <img class="gif" src="assets\giphy.gif"> -->
-      <div style="font-size: 14px;"> © Marion Calpena 2024</div>
-      
+        </a> -->
+        <div>
+          <form [formGroup]="form" (submit)="send()">
+            <label for="name">Full name</label>
+            <input formControlName="from_name" type="text" name="name" id="name" placeholder="Full name" />
+            <label for="email">Email address</label>
+            <input formControlName="from_email" type="email" name="email" id="email" placeholder="Email address" />
+            <label for="subject">Subject</label>
+            <input formControlName="subject" type="text" name="subject" id="subject" placeholder="Subject" />
+            <label for="message">Message</label>
+            <textarea formControlName="message" rows="6" name="message" id="message" placeholder="Message"></textarea>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
     </div>
+    <!-- <img class="gif" src="assets\giphy.gif"> -->
+    <div style="font-size: 14px;"> © Marion Calpena 2024</div>
     <div class="svg">
       <img src="assets\background2.png" class="backcircuit" />
     </div>
-    <modal [date]="'Mai - Juillet 2023'" *ngIf="modal.classroom.status" (onClose)="modal.classroom.status = false">
-      <div class="head">
-        <div class="titre">Classroom</div>
-        <div class="lienprojet">
-          <i class="bx bxl-angular" matTooltip="angular"></i>
-          <i class="bx bxl-typescript" matTooltip="typescript"></i>
-          <i class="bx bxl-sass" matTooltip="sass"></i>
-          <i class="bx bxl-nodejs" matTooltip="nodejs"></i>
-          <a href="https://www.creadocforschool.com/fr/" target="_blank">
-            <i class="bx bx-link" matTooltip="creadoc"></i>
-          </a>
-
-        </div>
-      </div>
-      <div class="pres">
-        La fonctionnalité Classroom de Creadoc for School permet aux enseignants d'intégrer des documents et des fiches
-        qu'ils souhaitent partager avec leurs étudiants. Toutefois, dans cette première version, les fiches interactives
-        ne sont accessibles qu'avec un code d'authentification spécifique à chaque enseignant. Cette approche s'avère
-        très pratique pour les exercices en classe, que ce soit au tableau ou sur un tableau interactif. Cependant,
-        cette version ne permet pas encore aux enseignants de créer des devoirs interactifs ni d'évaluer
-        individuellement les élèves.<br>
-      </div>
-      <div class="description">
-        <div class="CDA">
-          <b class="miniTitle">Le cahier des charges :</b>
-          <ul>
-            <li>Maintenir le code "class" (code d'authentification) pour référencer le bon enseignant tout en
-              introduisant un code personnel
-              unique pour chaque enseignant et ses élèves.</li>
-            <li>Créer deux interfaces distinctes, une pour les enseignants et une pour les étudiants.</li>
-            <li>
-              Pour l'interface enseignants, permettre la création de groupes ou de classes personnalisés avec la
-              possibilité de sélectionner les élèves.
-            </li>
-            <li>
-              Offrir la capacité de créer différentes sections au sein de ces groupes pour organiser les documents en
-              fonction des besoins.
-            </li>
-            <li>Permettre aux enseignants de visualiser le score de chaque élève sur chaque document, afin de savoir si
-              le devoir a été complété, d'afficher la note attribuée, ainsi que les points à corriger.</li>
-            <li>Permettre aux enseignants de visualiser individuellement chaque élève, en accédant à leurs classes ou
-              groupes, aux documents qu'ils ont réalisés et aux devoirs assignés, avec les scores correspondants.</li>
-            <li>Pour l'interface étudiant, permettre l'accès aux classes ou groupes auxquels ils ont été assignés, ainsi
-              que la visualisation des documents à réaliser ou déjà complétés, avec un score global affiché.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="illustration">
-        <div>
-          <b class="miniTitle"> Interface enseignant</b>
-          <div class="enseignant">
-            <img class="desktopgif" src="assets\DesktopEnseignantClassroom.gif">
-            <img class="mobilegif" src="assets\MobileEnseignantClassroom.gif">
-          </div>
-        </div>
-        <div>
-          <b class="miniTitle"> Interface étudiante</b>
-          <div class="student">
-            <img class="desktopgif" src="assets\DesktopStudentClassroom.gif">
-            <img class="mobilegif" src="assets\MobileStudentClassroom.gif">
-          </div>
-        </div>
-      </div>
-    </modal>
-    <modal [date]="'Novembre - Décembre 2023'" *ngIf="modal.monify.status" (onClose)="modal.monify.status = false">
-      <div class="head">
-        <div class="titre">Monify V.1</div>
-        <div class="lienprojet">
-          <i class="bx bxl-angular" matTooltip="angular"></i>
-          <i class="bx bxl-typescript" matTooltip="typescript"></i>
-          <i class="bx bxl-sass" matTooltip="sass"></i>
-          <i class="bx bxl-nodejs" matTooltip="nodejs"></i>
-          <a href="https://github.com/Gwe2B/maxe-frontend" target="_blank">
-            <i class="bx bxl-github" matTooltip="github"></i>
-          </a>
-
-        </div>
-      </div>
-      <div class="pres">
-        Monify est un projet qui prend son origine dans une problématique simple. En tant qu'auto-entrepreneur, j'ai dû
-        effectuer plusieurs calculs pour déterminer mes obligations envers l'organisme de l'URSSAF et le montant que je
-        pouvais me verser comme salaire. Aucun site web ou application ne répondait pleinement à mes besoins. C'est
-        alors que j'ai pris la décision de créer une application qui corresponde à mes attentes.
-
-        Avec l'aide de Gwenaël Guiraud, un ami développeur Back-end, nous avons mis en place Monify V.1.<br>
-      </div>
-      <div class="description">
-        <div class="CDA">
-          <b class="miniTitle">Le cahier des charges :</b>
-          <ul>
-            <li>Un formulaire comprenant les champs suivants : nom, date, montant reçu, taux de prestation, taux d'impôt
-              sur le revenu et taux de formation professionnelle libérale.</li>
-            <li>Une interface permettant de visualiser les revenus par mois, avec des totaux affichés. Cette
-              fonctionnalité facilite également l'entrée des revenus mensuels sur le site de l'URSSAF.</li>
-            <li>
-              Une représentation graphique des totaux des revenus sur une période donnée, offrant une vue d'ensemble
-              claire et visuelle.
-            </li>
-            <li>
-              Intégration d'un système de login pour garantir la sécurité des données, avec la possibilité de créer des
-              comptes pour d'autres utilisateurs.
-            </li>
-            <li>Un menu offrant des options de gestion telles que le changement de mot de passe, ainsi qu'une option
-              pour se déconnecter et sécuriser l'accès à l'application.</li>
-            <li>Fonctionnalité permettant de rendre l'application accessible en ligne, afin que d'autres utilisateurs
-              puissent également en bénéficier et gérer leurs revenus de manière efficace.</li>
-
-          </ul>
-        </div>
-      </div>
-      <div class="illustration">
-        <div>
-          <b class="miniTitle"> Interface Version 1</b>
-          <div class="enseignant">
-            <img class="desktopgif" src="assets\monify1.gif">
-          </div>
-        </div>
-      </div>
-      <div class="description">
-        <div class="CDA">
-          <b class="miniTitle">Prochaine update :</b>
-          <ul>
-            <li>Adapter l'application pour une utilisation sur les appareils mobiles, offrant ainsi une expérience
-              optimisée sur les smartphones et les tablettes.</li>
-            <li>Intégrer une interface conviviale permettant aux utilisateurs de créer des factures facilement et
-              rapidement, en saisissant les détails nécessaires tels que les informations sur le client, les produits ou
-              services fournis, les quantités, les prix, etc.</li>
-            <li>Ajouter une nouvelle section dans l'application dédiée à la gestion des comptes d'épargne. Les
-              utilisateurs pourront visualiser leurs comptes épargne, effectuer des dépôts, des retraits, consulter leur
-              historique de transactions, et définir des objectifs d'épargne.</li>
-            <li>Intégrer une fonctionnalité permettant aux utilisateurs de fournir des retours sur l'application
-              directement depuis l'interface. Cela peut inclure la possibilité de laisser des commentaires, de noter
-              l'application, de signaler des problèmes ou de proposer des fonctionnalités nouvelles. Ces retours seront
-              essentiels pour améliorer continuellement l'expérience utilisateur et répondre aux besoins de la
-              communauté d'utilisateurs.</li>
-          </ul>
-        </div>
-      </div>
-    </modal>
-    
   </div>
   
+  <modal [date]="'Mai - Juillet 2023'" *ngIf="modal.classroom.status" (onClose)="modal.classroom.status = false">
+    <div class="head">
+      <div class="titre">Classroom</div>
+      <div class="lienprojet">
+        <i class="bx bxl-angular" matTooltip="angular"></i>
+        <i class="bx bxl-typescript" matTooltip="typescript"></i>
+        <i class="bx bxl-sass" matTooltip="sass"></i>
+        <i class="bx bxl-nodejs" matTooltip="nodejs"></i>
+        <a href="https://www.creadocforschool.com/fr/" target="_blank">
+          <i class="bx bx-link" matTooltip="creadoc"></i>
+        </a>
+
+      </div>
+    </div>
+    <div class="pres">
+      La fonctionnalité Classroom de Creadoc for School permet aux enseignants d'intégrer des documents et des fiches
+      qu'ils souhaitent partager avec leurs étudiants. Toutefois, dans cette première version, les fiches interactives
+      ne sont accessibles qu'avec un code d'authentification spécifique à chaque enseignant. Cette approche s'avère
+      très pratique pour les exercices en classe, que ce soit au tableau ou sur un tableau interactif. Cependant,
+      cette version ne permet pas encore aux enseignants de créer des devoirs interactifs ni d'évaluer
+      individuellement les élèves.<br>
+    </div>
+    <div class="description">
+      <div class="CDA">
+        <b class="miniTitle">Le cahier des charges :</b>
+        <ul>
+          <li>Maintenir le code "class" (code d'authentification) pour référencer le bon enseignant tout en
+            introduisant un code personnel
+            unique pour chaque enseignant et ses élèves.</li>
+          <li>Créer deux interfaces distinctes, une pour les enseignants et une pour les étudiants.</li>
+          <li>
+            Pour l'interface enseignants, permettre la création de groupes ou de classes personnalisés avec la
+            possibilité de sélectionner les élèves.
+          </li>
+          <li>
+            Offrir la capacité de créer différentes sections au sein de ces groupes pour organiser les documents en
+            fonction des besoins.
+          </li>
+          <li>Permettre aux enseignants de visualiser le score de chaque élève sur chaque document, afin de savoir si
+            le devoir a été complété, d'afficher la note attribuée, ainsi que les points à corriger.</li>
+          <li>Permettre aux enseignants de visualiser individuellement chaque élève, en accédant à leurs classes ou
+            groupes, aux documents qu'ils ont réalisés et aux devoirs assignés, avec les scores correspondants.</li>
+          <li>Pour l'interface étudiant, permettre l'accès aux classes ou groupes auxquels ils ont été assignés, ainsi
+            que la visualisation des documents à réaliser ou déjà complétés, avec un score global affiché.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="illustration">
+      <div>
+        <b class="miniTitle"> Interface enseignant</b>
+        <div class="enseignant">
+          <img class="desktopgif" src="assets\DesktopEnseignantClassroom.gif">
+          <img class="mobilegif" src="assets\MobileEnseignantClassroom.gif">
+        </div>
+      </div>
+      <div>
+        <b class="miniTitle"> Interface étudiante</b>
+        <div class="student">
+          <img class="desktopgif" src="assets\DesktopStudentClassroom.gif">
+          <img class="mobilegif" src="assets\MobileStudentClassroom.gif">
+        </div>
+      </div>
+    </div>
+  </modal>
+  <modal [date]="'Novembre - Décembre 2023'" *ngIf="modal.monify.status" (onClose)="modal.monify.status = false">
+    <div class="head">
+      <div class="titre">Monify V.1</div>
+      <div class="lienprojet">
+        <i class="bx bxl-angular" matTooltip="angular"></i>
+        <i class="bx bxl-typescript" matTooltip="typescript"></i>
+        <i class="bx bxl-sass" matTooltip="sass"></i>
+        <i class="bx bxl-nodejs" matTooltip="nodejs"></i>
+        <a href="https://github.com/Gwe2B/maxe-frontend" target="_blank">
+          <i class="bx bxl-github" matTooltip="github"></i>
+        </a>
+
+      </div>
+    </div>
+    <div class="pres">
+      Monify est un projet qui prend son origine dans une problématique simple. En tant qu'auto-entrepreneur, j'ai dû
+      effectuer plusieurs calculs pour déterminer mes obligations envers l'organisme de l'URSSAF et le montant que je
+      pouvais me verser comme salaire. Aucun site web ou application ne répondait pleinement à mes besoins. C'est
+      alors que j'ai pris la décision de créer une application qui corresponde à mes attentes.
+
+      Avec l'aide de Gwenaël Guiraud, un ami développeur Back-end, nous avons mis en place Monify V.1.<br>
+    </div>
+    <div class="description">
+      <div class="CDA">
+        <b class="miniTitle">Le cahier des charges :</b>
+        <ul>
+          <li>Un formulaire comprenant les champs suivants : nom, date, montant reçu, taux de prestation, taux d'impôt
+            sur le revenu et taux de formation professionnelle libérale.</li>
+          <li>Une interface permettant de visualiser les revenus par mois, avec des totaux affichés. Cette
+            fonctionnalité facilite également l'entrée des revenus mensuels sur le site de l'URSSAF.</li>
+          <li>
+            Une représentation graphique des totaux des revenus sur une période donnée, offrant une vue d'ensemble
+            claire et visuelle.
+          </li>
+          <li>
+            Intégration d'un système de login pour garantir la sécurité des données, avec la possibilité de créer des
+            comptes pour d'autres utilisateurs.
+          </li>
+          <li>Un menu offrant des options de gestion telles que le changement de mot de passe, ainsi qu'une option
+            pour se déconnecter et sécuriser l'accès à l'application.</li>
+          <li>Fonctionnalité permettant de rendre l'application accessible en ligne, afin que d'autres utilisateurs
+            puissent également en bénéficier et gérer leurs revenus de manière efficace.</li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="illustration">
+      <div>
+        <b class="miniTitle"> Interface Version 1</b>
+        <div class="enseignant">
+          <img class="desktopgif" src="assets\monify1.gif">
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <div class="CDA">
+        <b class="miniTitle">Prochaine update :</b>
+        <ul>
+          <li>Adapter l'application pour une utilisation sur les appareils mobiles, offrant ainsi une expérience
+            optimisée sur les smartphones et les tablettes.</li>
+          <li>Intégrer une interface conviviale permettant aux utilisateurs de créer des factures facilement et
+            rapidement, en saisissant les détails nécessaires tels que les informations sur le client, les produits ou
+            services fournis, les quantités, les prix, etc.</li>
+          <li>Ajouter une nouvelle section dans l'application dédiée à la gestion des comptes d'épargne. Les
+            utilisateurs pourront visualiser leurs comptes épargne, effectuer des dépôts, des retraits, consulter leur
+            historique de transactions, et définir des objectifs d'épargne.</li>
+          <li>Intégrer une fonctionnalité permettant aux utilisateurs de fournir des retours sur l'application
+            directement depuis l'interface. Cela peut inclure la possibilité de laisser des commentaires, de noter
+            l'application, de signaler des problèmes ou de proposer des fonctionnalités nouvelles. Ces retours seront
+            essentiels pour améliorer continuellement l'expérience utilisateur et répondre aux besoins de la
+            communauté d'utilisateurs.</li>
+        </ul>
+      </div>
+    </div>
+  </modal>
 </div>

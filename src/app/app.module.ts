@@ -8,6 +8,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { AppComponent } from './app.component';
 import { ModalComponent } from './modal/modal.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { Form } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, ModalComponent],
