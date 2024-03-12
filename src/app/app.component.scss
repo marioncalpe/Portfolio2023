@@ -1255,6 +1255,8 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       z-index: 2;
       color: white;
       font-size: 45px;
+      padding-top: 100px;
+      padding-bottom: 100px;
 
       .text {
         font-family: $font-Pacifico;
@@ -1294,8 +1296,9 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         button{
           border: none;
           padding: 1em;
+          font-size: 18px;
           text-transform: uppercase;
-          font-weight: bold;
+          font-weight: bolder;
           border-radius: 10px;
           color: $background;
           background: $gradien;
@@ -1303,7 +1306,14 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       }
     }
   }
-
+  .copyright{
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    z-index: 5;
+    color: $white;
+    opacity: 0.50;
+  }
   .monifyimg {
     padding: 30px;
   }

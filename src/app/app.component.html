@@ -447,18 +447,15 @@
             <label for="message">Message</label>
             <textarea formControlName="message" rows="6" name="message" id="message"
               placeholder="Bonjour. . ."></textarea>
-          
             <button type="submit">Envoyer</button>
-          
         </form>
       </div>
       <!-- <img class="gif" src="assets\giphy.gif"> -->
-      <div style="font-size: 14px;"> © Marion Calpena 2024</div>
     </div>
-
     <div class="svg">
       <img src="assets\background2.png" class="backcircuit" />
     </div>
+    <div style="font-size: 14px;" class="copyright"> © Marion Calpena 2024</div>
   </div>
 
   <modal [date]="'Mai - Juillet 2023'" *ngIf="modal.classroom.status" (onClose)="modal.classroom.status = false">
