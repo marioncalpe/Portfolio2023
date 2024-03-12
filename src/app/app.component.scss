@@ -1257,15 +1257,21 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       font-size: 45px;
       padding-top: 100px;
       padding-bottom: 100px;
+
       @media screen and (max-width: 767px) {
         padding-top: 50px;
       }
-      .nameEmail{
-        display: flex; flex-direction: row; gap: 20px;
+
+      .nameEmail {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
         @media screen and (max-width: 767px) {
           flex-direction: column;
         }
       }
+
       .text {
         font-family: $font-Pacifico;
         padding-bottom: 30px;
@@ -1301,20 +1307,37 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           justify-content: center;
           flex-direction: column;
         }
-        button{
+
+        button {
+          cursor: pointer;
           border: none;
           padding: 1em;
           font-size: 18px;
           text-transform: uppercase;
           font-weight: bolder;
           border-radius: 10px;
-          color: $background;
-          background: $gradien;
+          backdrop-filter: blur(7.5px);
+          box-shadow: 1px 1px 20px 1px $gradien;
+          background: rgba(255, 255, 255, 0.1);
+          .submit {
+            background: $gradien;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          &:hover {
+            background: $gradien;
+            .submit {
+              background: black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+          }
         }
       }
     }
   }
-  .copyright{
+
+  .copyright {
     position: fixed;
     left: 15px;
     bottom: 15px;
@@ -1322,6 +1345,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     color: $white;
     opacity: 0.50;
   }
+
   .monifyimg {
     padding: 30px;
   }
