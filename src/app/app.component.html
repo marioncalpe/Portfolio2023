@@ -430,7 +430,7 @@
       <div class="text"> Contactez moi </div>
       <div>
         <form [formGroup]="form" (submit)="send()" class="form">
-          <div style="display: flex; flex-direction: row; gap: 20px;">
+          <div class="nameEmail">
             <div style="display: flex; flex-direction: column;gap: 20px;">
               <label for="name">Nom</label>
               <input formControlName="from_name" type="text" name="name" id="name" placeholder="Marion Calpena" />
