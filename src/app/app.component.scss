@@ -28,7 +28,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
   overflow: auto;
   background-color: $background;
 
-    /* Works on Firefox */
+  /* Works on Firefox */
   * {
     scrollbar-width: thin;
     scrollbar-color: rgb(255, 255, 255) rgba(0, 0, 0, 0);
@@ -59,11 +59,13 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     padding: 10px 5px;
     border-right: 1px solid rgba(255, 255, 255, 0.21);
     z-index: 1;
+
     .logo-main {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 5%;
+
       .m-red {
         position: absolute;
         background: $gradien;
@@ -82,24 +84,29 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       flex-direction: column;
       align-items: center;
       gap: 35px;
+
       a {
         text-decoration: none;
       }
+
       .bx {
         font-size: 42px;
         color: $white;
         cursor: pointer;
+
         &:hover {
           background: $gradien;
           text-shadow: $textshadowgradien;
           background-clip: text;
           -webkit-background-clip: text;
+
           &::before {
             color: transparent;
           }
         }
       }
     }
+
     .text-certificat {
       display: flex;
       align-items: center;
@@ -109,10 +116,12 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       text-orientation: mixed;
       padding-bottom: 15px;
     }
+
     @media screen and (max-width: 767px) {
       display: none;
     }
   }
+
   .content {
     scroll-behavior: smooth;
     width: 100%;
@@ -120,7 +129,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     overflow: auto;
     padding: 0px 20px 0px 20px;
     z-index: 0;
-    
+
     // .scroll-to-top {
     //   position: fixed;
     //   bottom: 15px;
@@ -135,13 +144,13 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     //   padding: 5px 7px;
     //   cursor: pointer;
     // }
-    
+
     // .show-scrollTop {
     //   opacity: 1;
     //   transition: all .2s ease-in-out;
     // }
     .m-red {
-      position:relative;
+      position: relative;
       padding-top: 20px;
       background: $gradien;
       -webkit-background-clip: text;
@@ -151,10 +160,12 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       line-height: 40px;
       text-shadow: $textshadowgradien;
       letter-spacing: 0;
+
       @media screen and (max-width: 767px) {
         display: none;
       }
     }
+
     .svg {
       top: 0;
       position: absolute;
@@ -163,15 +174,18 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       width: 90%;
       height: 100%;
       overflow: hidden;
+
       .backcircuit {
         width: 100%;
         position: absolute;
         overflow: hidden;
+
         @media screen and (max-width: 767px) {
           width: auto;
         }
       }
     }
+
     .home {
       display: flex;
       align-items: center;
@@ -179,6 +193,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       justify-content: space-evenly;
       height: 100%;
       gap: 30px;
+
       @media screen and (max-width: 767px) {
         padding-bottom: 50px;
       }
@@ -198,12 +213,14 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         position: relative;
         flex: 1;
         overflow: hidden;
+
         // transform: translateY(30px);
         @media screen and (max-width: 767px) {
           overflow: visible;
           margin-top: 140px;
           flex: none;
         }
+
         img {
           object-fit: cover;
           width: 350px;
@@ -212,6 +229,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           object-position: bottom;
           margin-bottom: 70px;
           z-index: 2;
+
           @media screen and (max-width: 767px) {
             width: 150px;
             height: 150px;
@@ -219,6 +237,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           }
         }
       }
+
       .infos {
         display: flex;
         align-items: center;
@@ -227,9 +246,11 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         gap: 25px;
         padding: 0 5%;
         z-index: 1;
+
         @media screen and (max-width: 767px) {
           flex: 1;
         }
+
         .name {
           font-family: $font-Pacifico;
           font-size: 36px;
@@ -237,6 +258,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
             0 0 3px rgba(255, 255, 255, 0.3);
         }
+
         .bio {
           font-family: $font-Segoe;
           font-size: 20px;
@@ -246,9 +268,11 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           align-items: center;
           justify-content: center;
         }
+
         .logo-social {
           display: flex;
           gap: 20px;
+
           .contour {
             display: flex;
             flex-direction: row;
@@ -259,6 +283,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             background: linear-gradient(45deg, #9edbff, #b3a0ff 50%, #f29dff);
             cursor: pointer;
             text-decoration: none;
+
             .bx {
               color: $background;
               font-size: 28px;
@@ -266,6 +291,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             }
           }
         }
+
         @media screen and (min-width: 1024px) {
           .biosuiteDesktop {
             border-radius: 10px;
@@ -281,14 +307,17 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             justify-content: center;
             flex-direction: column;
           }
-          .biosuite{
+
+          .biosuite {
             display: none;
           }
         }
+
         @media screen and (max-width: 767px) {
           .biosuiteDesktop {
             display: none;
           }
+
           .biosuite {
             border-radius: 10px;
             padding: 1em;
@@ -302,7 +331,8 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            .bx{
+
+            .bx {
               display: flex;
               width: 100%;
               font-size: 25px;
@@ -314,6 +344,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         }
       }
     }
+
     .projet {
       display: flex;
       justify-content: center;
@@ -321,26 +352,31 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       flex-direction: column;
       gap: 50px;
       padding: 50px 0;
+
       @media screen and (max-width: 767px) {
         padding: 0px 0;
         gap: 50px;
       }
+
       .title {
         color: $white;
         font-family: $font-Pacifico;
         font-size: 50px;
+
         @media screen and (max-width: 767px) {
           padding-top: 150px;
         }
       }
+
       .content-projet {
-        display: flex;  
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 50px;
         grid-row-gap: 50px;
+
         .projet {
           .cadre {
             height: 250px;
@@ -351,42 +387,53 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             border-radius: 20px;
             display: flex;
             justify-content: center;
+
             @media screen and (max-width: 767px) {
               height: 150px;
               width: 300px;
             }
+
             &:hover {
               .overlay-projet {
                 display: flex;
               }
             }
+
             .overlay-projet {
               @media screen and (max-width: 767px) {
                 display: flex;
               }
-              position: fixed; /* Sit on top of the page content */
-              display: none; /* Hidden by default */
+
+              position: fixed;
+              /* Sit on top of the page content */
+              display: none;
+              /* Hidden by default */
               flex-direction: column;
               justify-content: space-between;
-              width: 100%; /* Full width (cover the whole page) */
-              height: 100%; /* Full height (cover the whole page) */
+              width: 100%;
+              /* Full width (cover the whole page) */
+              height: 100%;
+              /* Full height (cover the whole page) */
               border-radius: 20px;
-              background-color: hsla(
-                0,
+              background-color: hsla(0,
                 0%,
                 6%,
-                0.8
-              ); /* Black background with opacity */
+                0.8);
+              /* Black background with opacity */
               backdrop-filter: blur(5px);
               background-size: cover;
-              z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-              cursor: pointer; /* Add a pointer on hover */
+              z-index: 2;
+              /* Specify a stack order in case you're using a different order for other elements */
+              cursor: pointer;
+
+              /* Add a pointer on hover */
               .row {
                 display: flex;
                 flex-direction: row;
                 height: 50px;
                 align-items: center;
                 justify-content: space-between;
+
                 .techno-cadre {
                   align-items: center;
                   display: flex;
@@ -395,10 +442,12 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
                   color: $white;
                   font-size: 28px;
                   gap: 5px;
+
                   @media screen and (max-width: 767px) {
-                    padding:0 10px;
+                    padding: 0 10px;
                   }
                 }
+
                 .date {
                   background-color: #323232;
                   color: #fff;
@@ -410,6 +459,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
                   margin-right: 5px;
                 }
               }
+
               .name {
                 display: flex;
                 justify-content: center;
@@ -417,18 +467,22 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
                 color: #fff;
                 font-size: 28px;
                 font-family: Rubik, sans-serif;
+
                 @media screen and (max-width: 767px) {
                   font-size: 20px;
                 }
               }
+
               .description {
                 color: $white;
                 font-size: 14px;
                 padding: 10px 10px 0 10px;
+
                 @media screen and (max-width: 767px) {
                   display: none;
                 }
               }
+
               .icon {
                 align-items: center;
                 display: flex;
@@ -438,12 +492,14 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
                 color: $white;
                 font-size: 28px;
                 gap: 5px;
+
                 @media screen and (max-width: 767px) {
-                  padding:10px 10px;
+                  padding: 10px 10px;
                 }
               }
             }
           }
+
           img {
             border-radius: 20px;
             // height: 100%;
@@ -459,17 +515,20 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         }
       }
     }
+
     .techno {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 50px 0;
       gap: 50px;
+
       @media screen and (max-width: 767px) {
         padding-bottom: 50px;
         padding: 0px 0;
         padding-top: 50px;
       }
+
       .title-techno {
         display: flex;
         justify-content: center;
@@ -477,11 +536,13 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         font-family: $font-Pacifico;
         font-size: 50px;
       }
+
       .content-techno {
-        display: flex;  
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 40px;
+
         @media screen and (max-width: 767px) {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
@@ -497,92 +558,100 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           color: $background;
         }
 
-        .technoSolo{
+        .technoSolo {
           display: flex;
           flex-direction: column;
           align-items: center;
           gap: 15px;
-          div{
+
+          div {
             opacity: 0;
             color: $white;
             font-size: 20px;
+
             @media screen and (max-width: 767px) {
               opacity: 1;
               font-size: 14px;
             }
           }
-          &:hover{
-            div{
+
+          &:hover {
+            div {
               opacity: 1;
             }
           }
         }
+
         .bxl-sass {
           background: linear-gradient(135deg, #e9acff 0.3%, #ff4fce 99.68%);
           box-shadow: $textshadowgradien;
         }
+
         .bxl-angular {
-          background: linear-gradient(
-            136.47deg,
-            #ffa7c1 -0.27%,
-            #ff5050 99.75%
-          );
+          background: linear-gradient(136.47deg,
+              #ffa7c1 -0.27%,
+              #ff5050 99.75%);
           box-shadow: $textshadowgradien;
         }
+
         .bxl-typescript {
           background: linear-gradient(225deg, #b1b5ff 0.07%, #4260ff 99.79%);
           box-shadow: $textshadowgradien;
-          
+
         }
+
         .bxs-coin-stack {
           background: linear-gradient(135deg, #e7a4ff -0.49%, #a532ff 100.13%);
           box-shadow: $textshadowgradien;
         }
+
         .bxl-javascript {
           background: linear-gradient(45deg, #ffcca8 0.21%, #fffa87 99.93%);
           box-shadow: $textshadowgradien;
         }
+
         .bxl-php {
           background: linear-gradient(225deg, #99daff 0.14%, #a966ff 99.86%);
           box-shadow: $textshadowgradien;
         }
+
         .bxl-git {
           background: linear-gradient(225deg, #ffd6bf 0.14%, #ff7272 99.86%);
           box-shadow: $textshadowgradien;
         }
+
         .bxl-github {
-          background: linear-gradient(
-            45deg,
-            #89e3ff 0.29%,
-            #cfffb8 50.14%,
-            #ffe177
-          );
+          background: linear-gradient(45deg,
+              #89e3ff 0.29%,
+              #cfffb8 50.14%,
+              #ffe177);
           box-shadow: $textshadowgradien;
         }
+
         .bxl-gitlab {
           background: linear-gradient(225deg, #fff6a7, #ff6e41 99.71%);
           box-shadow: $textshadowgradien;
         }
+
         .bxl-trello {
-          background: linear-gradient(
-            225.22deg,
-            #93ffff -0.09%,
-            #59a5ff 100.01%
-          );
+          background: linear-gradient(225.22deg,
+              #93ffff -0.09%,
+              #59a5ff 100.01%);
           box-shadow: $textshadowgradien;
         }
+
         .bxl-figma {
-          background: linear-gradient(
-            225.22deg,
-            #aae0ff -0.01%,
-            #5affce 100.08%
-          );
+          background: linear-gradient(225.22deg,
+              #aae0ff -0.01%,
+              #5affce 100.08%);
           box-shadow: $textshadowgradien;
         }
+
         .bx-layout {
           background: linear-gradient(135deg, #ffacd3 0.3%, #faeff7 99.68%);
           box-shadow: $textshadowgradien;
         }
+
         .image {
           background: $gradien;
           box-shadow: $textshadowgradien;
@@ -591,12 +660,15 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         }
       }
     }
+
     .exp {
       padding: 50px 0;
       gap: 50px;
+
       @media screen and (max-width: 767px) {
         margin-top: -100px;
       }
+
       .cd-container {
         width: 90%;
         max-width: 1080px;
@@ -604,6 +676,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         padding: 0 10%;
         border-radius: 20px;
       }
+
       .cd-container::after {
         content: "";
         display: table;
@@ -622,6 +695,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         margin-top: 2em;
         margin-bottom: 2em;
       }
+
       #cd-timeline::before {
         content: "";
         position: absolute;
@@ -632,11 +706,13 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         // ligne
         background: $white;
       }
+
       @media only screen and (min-width: 1170px) {
         #cd-timeline {
           margin-top: 3em;
           margin-bottom: 3em;
         }
+
         #cd-timeline::before {
           left: 50%;
           margin-left: -2px;
@@ -647,24 +723,30 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         position: relative;
         margin: 3em 0;
       }
+
       .cd-timeline-block:after {
         content: "";
         display: table;
         clear: both;
       }
+
       .cd-timeline-block:first-child {
         margin-top: 0;
       }
+
       .cd-timeline-block:last-child {
         margin-bottom: 0;
       }
+
       @media only screen and (min-width: 1170px) {
         .cd-timeline-block {
           margin: 4em 0;
         }
+
         .cd-timeline-block:first-child {
           margin-top: 0;
         }
+
         .cd-timeline-block:last-child {
           margin-bottom: 0;
         }
@@ -681,10 +763,12 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         box-shadow: 0 0 0 4px $white, inset 0 2px 0 rgba(0, 0, 0, 0.08),
           0 3px 0 4px rgba(0, 0, 0, 0.05);
       }
+
       .cd-timeline-img {
         // color under circle
         background: $gradien;
       }
+
       @media only screen and (min-width: 1170px) {
         .cd-timeline-img {
           width: 30px;
@@ -708,6 +792,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         background: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
         padding: 1em;
+
         .timeline-content-info {
           background: $background;
           padding: 5px 10px;
@@ -715,15 +800,19 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           font-size: 12px;
           box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08);
           border-radius: 2px;
+
           i {
             margin-right: 5px;
           }
+
           .timeline-content-info-title,
           .timeline-content-info-date {
             width: calc(50% - 2px);
             display: inline-block;
           }
+
           @media (max-width: 500px) {
+
             .timeline-content-info-title,
             .timeline-content-info-date {
               display: block;
@@ -731,6 +820,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             }
           }
         }
+
         .content-skills {
           font-size: 12px;
           padding: 0;
@@ -738,6 +828,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+
           li {
             background: $background;
             border-radius: 2px;
@@ -750,25 +841,30 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           }
         }
       }
+
       .cd-timeline-content:after {
         content: "";
         display: table;
         clear: both;
       }
+
       .cd-timeline-content h2 {
         color: rgba(255, 255, 255, 0.9);
         margin-top: 0;
         margin-bottom: 5px;
       }
+
       .cd-timeline-content p,
       .cd-timeline-content .cd-date {
         color: rgba(255, 255, 255, 0.7);
         font-size: 13px;
         font-size: 0.8125rem;
       }
+
       .cd-timeline-content .cd-date {
         display: inline-block;
       }
+
       .cd-timeline-content p {
         margin: 1em 0;
         line-height: 1.6;
@@ -790,16 +886,19 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           font-size: 20px;
           font-size: 1.50rem;
         }
+
         .cd-timeline-content p {
           font-size: 16px;
           font-size: 1rem;
         }
+
         .cd-timeline-content .cd-read-more,
         .cd-timeline-content .cd-date {
           font-size: 14px;
           font-size: 0.875rem;
         }
       }
+
       @media only screen and (min-width: 1170px) {
         .cd-timeline-content {
           color: rgb(0, 0, 0);
@@ -808,6 +907,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           width: 45%;
           margin: 0 -5%;
         }
+
         .cd-timeline-content::before {
           // triangle left
           top: 24px;
@@ -817,6 +917,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           backdrop-filter: blur(7.5px);
           box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
         }
+
         .cd-timeline-content .cd-date {
           position: absolute;
           width: 100%;
@@ -825,9 +926,11 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           font-size: 18px;
           font-size: 1rem;
         }
+
         .cd-timeline-block:nth-child(even) .cd-timeline-content {
           float: right;
         }
+
         .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
           top: 24px;
           left: auto;
@@ -837,9 +940,11 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           backdrop-filter: blur(7.5px);
           box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
         }
+
         .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
           float: right;
         }
+
         .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
           left: auto;
           right: 122%;
@@ -855,23 +960,28 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         font-size: 50px;
       }
     }
+
     .contact {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 20px 5%;
       gap: 50px;
+
       @media screen and (max-width: 767px) {
         padding: 20px 5%;
       }
+
       .title {
         color: $white;
         font-family: $font-Pacifico;
         font-size: 70px;
         padding-bottom: 70px;
       }
+
       .form {
         padding-top: 20px;
+
         form {
           display: flex;
           flex-direction: column;
@@ -883,33 +993,39 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             background: rgba(255, 255, 255, 0.1);
             color: $white;
           }
+
           mat-label {
             color: $white;
           }
+
           .namemail {
             display: flex;
             flex-direction: row;
             gap: 20px;
             width: 100%;
+
             @media screen and (max-width: 767px) {
               flex-direction: column;
               gap: 0px;
             }
+
             .mat-mdc-form-field {
               min-width: 400px;
+
               @media screen and (max-width: 767px) {
                 min-width: 300px;
               }
             }
-            .name {
-            }
-            .email {
-            }
+
+            .name {}
+
+            .email {}
           }
-          .subject {
-          }
-          .message {
-          }
+
+          .subject {}
+
+          .message {}
+
           .btn-send {
             display: flex;
             justify-content: center;
@@ -921,11 +1037,12 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
             box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
             cursor: pointer;
             margin-bottom: 30px;
+
             &:hover {
-              background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 0))
-                  padding-box,
+              background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 0)) padding-box,
                 linear-gradient(45deg, #9edbff, #b3a0ff 50%, #f29dff) border-box;
               color: #0a0a0a;
+
               .txt {
                 color: #0a0a0a;
                 -webkit-background-clip: unset;
@@ -934,6 +1051,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
                 -webkit-text-fill-color: unset;
               }
             }
+
             .txt {
               padding: 10px;
               background: $gradien;
@@ -950,18 +1068,21 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         }
       }
     }
-    modal{
-      .head{
+
+    modal {
+      .head {
         padding-bottom: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 20px;
         align-items: center;
+
         @media screen and (max-width: 767px) {
           padding: 20px;
         }
-        .titre{
+
+        .titre {
           font-size: 70px;
           padding: 20px;
           background: $gradien;
@@ -975,28 +1096,34 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           width: 100%;
           display: flex;
           justify-content: center;
+
           @media screen and (max-width: 767px) {
             font-size: 40px;
           }
         }
-        .technoprojet{
+
+        .technoprojet {
           color: $white;
           font-size: 50px;
+
           @media screen and (max-width: 767px) {
             display: flex;
             flex-direction: row;
           }
         }
-        .lienprojet{
+
+        .lienprojet {
           color: $white;
           font-size: 40px;
+
           @media screen and (max-width: 767px) {
             display: flex;
             flex-direction: row;
           }
         }
       }
-      .pres{
+
+      .pres {
         color: $white;
         font-size: 20px;
         padding: 10px;
@@ -1006,27 +1133,33 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
         box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
         background: rgba(255, 255, 255, 0.1);
         border-radius: 20px;
+
         @media screen and (max-width: 767px) {
           margin: 20px 20px;
         }
       }
-      .miniTitle{
+
+      .miniTitle {
         color: $white;
         font-size: 30px;
         display: flex;
         justify-content: center;
+
         @media screen and (max-width: 767px) {
           font-size: 20px;
         }
       }
-      .description{
+
+      .description {
         color: $white;
         display: flex;
         flex-direction: row;
+
         @media screen and (max-width: 767px) {
           flex-direction: column;
         }
-        ul{
+
+        ul {
           font-size: 20px;
           padding: 0 45px;
           margin: 50px 200px;
@@ -1034,110 +1167,145 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
           background: rgba(255, 255, 255, 0.1);
           border-radius: 20px;
+
           @media screen and (max-width: 767px) {
             margin: 50px 50px;
           }
         }
-        li{
+
+        li {
           padding: 10px 0;
         }
-        .CDA{
+
+        .CDA {
           font-size: 20px;
-          ul{
+
+          ul {
             margin: 50px 200px;
             backdrop-filter: blur(10px);
             box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
             background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
+
             @media screen and (max-width: 767px) {
               margin: 20px 20px;
             }
           }
-          li{
+
+          li {
             padding: 10px 0;
           }
         }
-        .textglobal{
+
+        .textglobal {
           font-size: 18px;
         }
-        
-        
+
+
       }
-      .illustration{
+
+      .illustration {
         display: flex;
         flex-direction: row;
         padding-bottom: 30px;
         flex-wrap: wrap;
         justify-content: center;
+
         @media screen and (max-width: 767px) {
           flex-direction: column;
         }
       }
-      .enseignant, .student{
+
+      .enseignant,
+      .student {
         display: flex;
         padding: 20px 0;
         gap: 30px;
         justify-content: space-evenly;
         justify-content: center;
         align-items: center;
+
         @media screen and (max-width: 767px) {
           flex-direction: column;
         }
       }
-      .student{
+
+      .student {
         gap: 10px
       }
-      .desktopgif{
+
+      .desktopgif {
         width: 700px;
         display: flex;
+
         @media screen and (max-width: 767px) {
           width: 400px;
         }
       }
-      .mobilegif{
+
+      .mobilegif {
         height: 400px;
       }
     }
-    .footer{
+
+    .footer {
       display: flex;
       flex-direction: column;
       align-items: center;
       z-index: 2;
-      color: black;
+      color: white;
       font-size: 45px;
-      background-color: white;
-      .text{
+
+      .text {
         font-family: $font-Pacifico;
         padding-bottom: 30px;
       }
-      .gif{
+
+      .gif {
         height: 100px;
       }
-      .logo-social {
+
+      .form {
         display: flex;
+        flex-direction: column;
         gap: 20px;
-        padding-bottom: 20px;
-        .contour {
+        font-family: $font-Segoe;
+
+        label {
+          font-size: 18px;
+        }
+
+        input,
+        textarea {
+          border-radius: 10px;
+          border: none;
+          padding: 1em;
+          backdrop-filter: blur(7.5px);
+          box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
+          background: rgba(255, 255, 255, 0.1);
+          font-family: $font-Segoe;
+          font-size: 18px;
+          color: $white;
           display: flex;
-          flex-direction: row;
           align-items: center;
-          gap: 5px;
-          padding: 5px;
-          border-radius: 25px;
-          background: linear-gradient(45deg, #9edbff, #b3a0ff 50%, #f29dff);
-          cursor: pointer;
-          text-decoration: none;
-          .bx {
-            color: $background;
-            font-size: 28px;
-            padding: 5px;
-          }
+          justify-content: center;
+          flex-direction: column;
+        }
+        button{
+          border: none;
+          padding: 1em;
+          text-transform: uppercase;
+          font-weight: bold;
+          border-radius: 10px;
+          color: $background;
+          background: $gradien;
         }
       }
     }
   }
-.monifyimg{
-  padding: 30px;
-}
+
+  .monifyimg {
+    padding: 30px;
+  }
 
 }
