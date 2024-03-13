@@ -961,114 +961,6 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       }
     }
 
-    .contact {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px 5%;
-      gap: 50px;
-
-      @media screen and (max-width: 767px) {
-        padding: 20px 5%;
-      }
-
-      .title {
-        color: $white;
-        font-family: $font-Pacifico;
-        font-size: 70px;
-        padding-bottom: 70px;
-      }
-
-      .form {
-        padding-top: 20px;
-
-        form {
-          display: flex;
-          flex-direction: column;
-
-          ::ng-deep .mdc-text-field {
-            border-radius: 10px;
-            backdrop-filter: blur(7.5px);
-            box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
-            background: rgba(255, 255, 255, 0.1);
-            color: $white;
-          }
-
-          mat-label {
-            color: $white;
-          }
-
-          .namemail {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            width: 100%;
-
-            @media screen and (max-width: 767px) {
-              flex-direction: column;
-              gap: 0px;
-            }
-
-            .mat-mdc-form-field {
-              min-width: 400px;
-
-              @media screen and (max-width: 767px) {
-                min-width: 300px;
-              }
-            }
-
-            .name {}
-
-            .email {}
-          }
-
-          .subject {}
-
-          .message {}
-
-          .btn-send {
-            display: flex;
-            justify-content: center;
-            background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
-              linear-gradient(45deg, #9edbff, #b3a0ff 50%, #f29dff) border-box;
-            border-radius: 50em;
-            border: 2px solid transparent;
-            backdrop-filter: blur(7.5px);
-            box-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
-            cursor: pointer;
-            margin-bottom: 30px;
-
-            &:hover {
-              background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 0)) padding-box,
-                linear-gradient(45deg, #9edbff, #b3a0ff 50%, #f29dff) border-box;
-              color: #0a0a0a;
-
-              .txt {
-                color: #0a0a0a;
-                -webkit-background-clip: unset;
-                background-clip: unset;
-                background: transparent;
-                -webkit-text-fill-color: unset;
-              }
-            }
-
-            .txt {
-              padding: 10px;
-              background: $gradien;
-              -webkit-background-clip: text;
-              background-clip: text;
-              -webkit-text-fill-color: transparent;
-              font-family: $font-Pacifico;
-              font-size: 24px;
-              line-height: 40px;
-              text-shadow: $textshadowgradien;
-              letter-spacing: 0;
-            }
-          }
-        }
-      }
-    }
-
     modal {
       .head {
         padding-bottom: 50px;
@@ -1250,8 +1142,9 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
 
     .footer {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      justify-content: space-around;
       z-index: 2;
       color: white;
       font-size: 45px;
@@ -1319,17 +1212,20 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           backdrop-filter: blur(7.5px);
           box-shadow: 1px 1px 20px 1px $gradien;
           background: rgba(255, 255, 255, 0.1);
+
           .submit {
             background: $gradien;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
+
           &:hover {
             background: $gradien;
+
             .submit {
               background: black;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
             }
           }
         }
@@ -1350,4 +1246,39 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     padding: 30px;
   }
 
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+.floattext {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  font-family: $font-Pacifico;
+  font-size: 80px;
+  gap: 40px;
+
+  .contact {
+    line-height:normal;
+    background: $gradien;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
