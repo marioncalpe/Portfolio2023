@@ -171,7 +171,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       position: absolute;
       filter: blur(0px);
       z-index: -50;
-      width: 90%;
+      width: 98%;
       height: 100%;
       overflow: hidden;
 
@@ -1130,13 +1130,9 @@ modal {
       padding: 20px;
       background: $gradien;
       -webkit-background-clip: text;
-      background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: $font-Pacifico;
       line-height: 85px;
-      text-shadow: $textshadowgradien;
-      letter-spacing: 0;
-      width: 100%;
       display: flex;
       justify-content: center;
 
@@ -1169,7 +1165,7 @@ modal {
   .pres {
     color: $white;
     font-size: 20px;
-    padding: 10px;
+    padding: 1em;
     margin: 0px 200px;
     margin-bottom: 50px;
     backdrop-filter: blur(10px);
@@ -1204,7 +1200,7 @@ modal {
 
     ul {
       font-size: 20px;
-      padding: 0 45px;
+      padding: 1em;
       margin: 50px 200px;
       backdrop-filter: blur(10px);
       box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
