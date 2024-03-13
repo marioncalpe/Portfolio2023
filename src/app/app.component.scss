@@ -1072,7 +1072,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
   font-family: $font-Pacifico;
-  font-size: 80px;
+  font-size: 180%;
   gap: 40px;
 
   .contact {
@@ -1103,6 +1103,13 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       font-size: 28px;
       padding: 5px;
     }
+  }
+}
+
+.decoration{
+  display: flex; flex-direction: column; align-items: center; gap: 80px;
+  @media screen and (max-width: 1080px) {
+    display: none;
   }
 }
 modal {
