@@ -269,29 +269,6 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
           justify-content: center;
         }
 
-        .logo-social {
-          display: flex;
-          gap: 20px;
-
-          .contour {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 5px;
-            padding: 5px;
-            border-radius: 25px;
-            background: linear-gradient(45deg, #9edbff, #b3a0ff 50%, #f29dff);
-            cursor: pointer;
-            text-decoration: none;
-
-            .bx {
-              color: $background;
-              font-size: 28px;
-              padding: 5px;
-            }
-          }
-        }
-
         @media screen and (min-width: 1024px) {
           .biosuiteDesktop {
             border-radius: 10px;
@@ -961,184 +938,7 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
       }
     }
 
-    modal {
-      .head {
-        padding-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 20px;
-        align-items: center;
-
-        @media screen and (max-width: 767px) {
-          padding: 20px;
-        }
-
-        .titre {
-          font-size: 70px;
-          padding: 20px;
-          background: $gradien;
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-family: $font-Pacifico;
-          line-height: 85px;
-          text-shadow: $textshadowgradien;
-          letter-spacing: 0;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-
-          @media screen and (max-width: 767px) {
-            font-size: 40px;
-          }
-        }
-
-        .technoprojet {
-          color: $white;
-          font-size: 50px;
-
-          @media screen and (max-width: 767px) {
-            display: flex;
-            flex-direction: row;
-          }
-        }
-
-        .lienprojet {
-          color: $white;
-          font-size: 40px;
-
-          @media screen and (max-width: 767px) {
-            display: flex;
-            flex-direction: row;
-          }
-        }
-      }
-
-      .pres {
-        color: $white;
-        font-size: 20px;
-        padding: 10px;
-        margin: 0px 200px;
-        margin-bottom: 50px;
-        backdrop-filter: blur(10px);
-        box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-
-        @media screen and (max-width: 767px) {
-          margin: 20px 20px;
-        }
-      }
-
-      .miniTitle {
-        color: $white;
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-
-        @media screen and (max-width: 767px) {
-          font-size: 20px;
-        }
-      }
-
-      .description {
-        color: $white;
-        display: flex;
-        flex-direction: row;
-
-        @media screen and (max-width: 767px) {
-          flex-direction: column;
-        }
-
-        ul {
-          font-size: 20px;
-          padding: 0 45px;
-          margin: 50px 200px;
-          backdrop-filter: blur(10px);
-          box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
-          background: rgba(255, 255, 255, 0.1);
-          border-radius: 20px;
-
-          @media screen and (max-width: 767px) {
-            margin: 50px 50px;
-          }
-        }
-
-        li {
-          padding: 10px 0;
-        }
-
-        .CDA {
-          font-size: 20px;
-
-          ul {
-            margin: 50px 200px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-
-            @media screen and (max-width: 767px) {
-              margin: 20px 20px;
-            }
-          }
-
-          li {
-            padding: 10px 0;
-          }
-        }
-
-        .textglobal {
-          font-size: 18px;
-        }
-
-
-      }
-
-      .illustration {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        @media screen and (max-width: 767px) {
-          flex-direction: column;
-        }
-      }
-
-      .enseignant,
-      .student {
-        display: flex;
-        padding: 20px 0;
-        gap: 30px;
-        justify-content: space-evenly;
-        justify-content: center;
-        align-items: center;
-
-        @media screen and (max-width: 767px) {
-          flex-direction: column;
-        }
-      }
-
-      .student {
-        gap: 10px
-      }
-
-      .desktopgif {
-        width: 700px;
-        display: flex;
-
-        @media screen and (max-width: 767px) {
-          width: 400px;
-        }
-      }
-
-      .mobilegif {
-        height: 400px;
-      }
-    }
+    
 
     .footer {
       display: flex;
@@ -1250,17 +1050,17 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
 
 @keyframes float {
   0% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0);
     transform: translatey(0px);
   }
 
   50% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 25px 15px 0px rgba(255, 255, 255, 0);
     transform: translatey(-20px);
   }
 
   100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 20px 5px 15px 0px rgba(255, 255, 255, 0);
     transform: translatey(0px);
   }
 }
@@ -1280,5 +1080,206 @@ $textshadowgradien: 0 0px 20px rgba(232, 168, 255, 0.5);
     background: $gradien;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+.logo-social {
+  display: flex;
+  gap: 20px;
+
+  .contour {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #9edbff, #b3a0ff 50%, #f29dff);
+    cursor: pointer;
+    text-decoration: none;
+
+    .bx {
+      color: $background;
+      font-size: 28px;
+      padding: 5px;
+    }
+  }
+}
+modal {
+  .head {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      padding: 20px;
+    }
+
+    .titre {
+      font-size: 70px;
+      padding: 20px;
+      background: $gradien;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: $font-Pacifico;
+      line-height: 85px;
+      text-shadow: $textshadowgradien;
+      letter-spacing: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      @media screen and (max-width: 767px) {
+        font-size: 40px;
+      }
+    }
+
+    .technoprojet {
+      color: $white;
+      font-size: 50px;
+
+      @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .lienprojet {
+      color: $white;
+      font-size: 40px;
+
+      @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+
+  .pres {
+    color: $white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px 200px;
+    margin-bottom: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+
+    @media screen and (max-width: 767px) {
+      margin: 20px 20px;
+    }
+  }
+
+  .miniTitle {
+    color: $white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+
+  .description {
+    color: $white;
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    ul {
+      font-size: 20px;
+      padding: 0 45px;
+      margin: 50px 200px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+
+      @media screen and (max-width: 767px) {
+        margin: 50px 50px;
+      }
+    }
+
+    li {
+      padding: 10px 0;
+    }
+
+    .CDA {
+      font-size: 20px;
+
+      ul {
+        margin: 50px 200px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 20px 1px rgba(107, 107, 107, 0.068);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+
+        @media screen and (max-width: 767px) {
+          margin: 20px 20px;
+        }
+      }
+
+      li {
+        padding: 10px 0;
+      }
+    }
+
+    .textglobal {
+      font-size: 18px;
+    }
+
+
+  }
+
+  .illustration {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  .enseignant,
+  .student {
+    display: flex;
+    padding: 20px 0;
+    gap: 30px;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  .student {
+    gap: 10px
+  }
+
+  .desktopgif {
+    width: 700px;
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      width: 400px;
+    }
+  }
+
+  .mobilegif {
+    height: 400px;
   }
 }
